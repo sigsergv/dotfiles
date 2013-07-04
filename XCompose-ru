@@ -1,0 +1,38 @@
+# UTF-8 (Unicode) compose sequence
+# for russian keymap
+# Sergei Stolyarov <sergei@regolit.com>
+
+# common characters
+include "/usr/share/X11/locale/en_US.UTF-8/Compose"
+
+<Multi_key> <Cyrillic_EF> <Cyrillic_IE> : "@"   at # COMMERCIAL AT
+<Multi_key> <p> <p>            : "¶"   paragraph # PILCROW SIGN
+<Multi_key> <Cyrillic_ze> <exclam>            : "¶"   paragraph # PILCROW SIGN
+<Multi_key> <exclam> <Cyrillic_ze>            : "¶"   paragraph # PILCROW SIGN
+<Multi_key> <Cyrillic_ze> <Cyrillic_ze> : "¶"   paragraph # PILCROW SIGN
+
+<Multi_key> <Cyrillic_yeru> <Cyrillic_shcha> : "§"   section # SECTION SIGN
+<Multi_key> <Cyrillic_shcha> <Cyrillic_yeru> : "§"   section # SECTION SIGN
+
+<Multi_key> <Cyrillic_shcha> <Cyrillic_che> : "¤"   currency # CURRENCY SIGN
+<Multi_key> <Cyrillic_che> <Cyrillic_shcha> : "¤"   currency # CURRENCY SIGN
+
+<Multi_key> <Cyrillic_ES> <Cyrillic_ES> <Cyrillic_ES> <Cyrillic_ZE> : "☭"   U262D # HAMMER AND SICKLE
+<Multi_key> <Cyrillic_BE> <3> : "♥"   U2665 # BLACK HEART SUIT
+
+<Multi_key> <Cyrillic_ZHE> <parenright>        : "☺"   U263A # WHITE SMILING FACE
+<Multi_key> <Cyrillic_ZHE> <parenleft>         : "☹"   U2639 # WHITE FROWNING FACE
+
+<Multi_key> <Cyrillic_BE> <minus>  : "←" U2190 # LEFTWARDS ARROW
+<Multi_key> <minus> <Cyrillic_YU>   : "→" U2192 # RIGHTWARDS ARROW
+
+<Multi_key> <less> <equal>  : "⇐" U21D0
+<Multi_key> <equal> <greater>  : "⇒" U21D2
+<Multi_key> <Cyrillic_BE> <equal>  : "⇐" U21D0
+<Multi_key> <equal> <Cyrillic_YU>  : "⇒" U21D2
+
+
+
+
+
+

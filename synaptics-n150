@@ -1,0 +1,57 @@
+#!/bin/sh
+
+# LeftEdge=1752
+# RightEdge=5192
+synclient LeftEdge=1752 \
+    RightEdge=5800 \
+    TopEdge=1620 \
+    BottomEdge=4236 \
+    FingerLow=10 \
+    FingerHigh=15 \
+    FingerPress=255 \
+    MaxTapTime=150 \
+    MaxTapMove=350 \
+    MaxDoubleTapTime=50 \
+    SingleTapTimeout=150 \
+    ClickTime=100 \
+    FastTaps=1 \
+    LockedDrags=1 \
+    EmulateMidButtonTime=75 \
+    EmulateTwoFingerMinZ=40 \
+    EmulateTwoFingerMinW=5 \
+    VertScrollDelta=255 \
+    HorizScrollDelta=100 \
+    VertEdgeScroll=1 \
+    HorizEdgeScroll=0 \
+    CornerCoasting=0 \
+    VertTwoFingerScroll=0 \
+    HorizTwoFingerScroll=0 \
+    MinSpeed=1 \
+    MaxSpeed=6 \
+    AccelFactor=0.02 \
+    TrackstickSpeed=20 \
+    EdgeMotionMinZ=29 \
+    EdgeMotionMaxZ=59 \
+    EdgeMotionMinSpeed=1 \
+    EdgeMotionMaxSpeed=101 \
+    EdgeMotionUseAlways=0 \
+    TapButton1=1 TapButton2=2 TapButton3=3 \
+    ClickFinger1=1 ClickFinger2=2 ClickFinger3=3 \
+    CircularScrolling=0 \
+    CircScrollDelta=0.1 \
+    CircScrollTrigger=0 \
+    CircularPad=0 \
+    PalmDetect=0 \
+    PalmMinWidth=10 \
+    PalmMinZ=199 \
+    PressureMotionMinFactor=1 \
+    PressureMotionMaxFactor=1
+
+
+    #ScrollButtonRepeat=10 \
+    #UpDownScrolling=1 \
+    #LeftRightScrolling=0 \
+    #UpDownScrollRepeat=0 \
+    #LeftRightScrollRepeat=1 \
+
+#synclient LeftEdge=1752 RightEdge=5192 TopEdge=1620 BottomEdge=4236 FingerLow=10 FingerHigh=15 FingerPress=255 MaxTapTime=180 MaxTapMove=50 MaxDoubleTapTime=50 SingleTapTimeout=150 ClickTime=100 FastTaps=1 EmulateMidButtonTime=75 EmulateTwoFingerMinZ=40 EmulateTwoFingerMinW=5 VertScrollDelta=75 HorizScrollDelta=100 VertEdgeScroll=1 HorizEdgeScroll=0 CornerCoasting=0 VertTwoFingerScroll=0 HorizTwoFingerScroll=0 MinSpeed=0.246 MaxSpeed=0.89 AccelFactor=0.01 TrackstickSpeed=40 EdgeMotionMinZ=29 EdgeMotionMaxZ=159 EdgeMotionMinSpeed=1 EdgeMotionMaxSpeed=401 EdgeMotionUseAlways=0 UpDownScrolling=1 LeftRightScrolling=1 UpDownScrollRepeat=1 LeftRightScrollRepeat=1 ScrollButtonRepeat=100 TapButton1=1 TapButton2=2 TapButton3=3 ClickFinger1=1 ClickFinger2=2 ClickFinger3=3 CircularScrolling=0 CircScrollDelta=0.1 CircScrollTrigger=0 CircularPad=0 PalmDetect=0 PalmMinWidth=10 PalmMinZ=199 PressureMotionMinZ=29 PressureMotionMaxZ=159 PressureMotionMinFactor=1 PressureMotionMaxFactor=1

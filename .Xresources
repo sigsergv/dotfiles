@@ -1,0 +1,29 @@
+XTerm*CharClass: 33:48,37:48,45-47:48,58:48,64:48,126:48,160-255:48
+XTerm*saveLines: 2048
+XTerm*metaSendsEscape: true
+XTerm*faceName: Liberation Mono
+XTerm*faceSize: 10
+XTerm*locale: UTF-8
+xterm*iconPixmap: /home/cancel/icons/xterm.xbm
+xterm*iconMask: /home/cancel/icons/xterm-mask.xbm
+XTerm*scrollColor: red
+XTerm*cursorColor: rgb:00/80/00
+XTerm*rightScrollBar: true
+Xft.hintstyle: hintfull
+
+XTerm.vt100.translations: #override\n\
+        Shift <KeyPress> Select:select-cursor-start() select-cursor-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+        Shift <KeyPress> Insert:insert-selection(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+        ~Ctrl ~Meta <Btn2Up>:insert-selection(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+        <BtnUp>:select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n
+
+xpdf*fontList:-*-therminus-medium-r-*-*-14-*-*-*-*-*-koi8-r#xterm*faceName: 
+
+*VT100*colorULMode: on
+*VT100*colorUL: green
+*VT100*italicULMode: on
+!*VT100*underLine: off
+! Uncomment this to use color for the bold attribute
+*VT100*colorBDMode: on
+*VT100*colorBD: red
+

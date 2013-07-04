@@ -1,0 +1,26 @@
+#!/bin/sh
+
+synclient TapButton1=1 \
+    TapButton2=2 \
+    TapButton3=3 \
+    VertEdgeScroll=1 \
+    HorizEdgeScroll=0 \
+    MaxTapTime=180 \
+    MaxTapMove=59 \
+    MaxDoubleTapTime=40 \
+    SingleTapTimeout=150 \
+    ClickTime=100 \
+    FastTaps=0 \
+    FingerHigh=15 \
+    FingerLow=10 \
+    FingerPress=256 \
+    AccelFactor=0.08 \
+    EmulateMidButtonTime=3000 \
+    MaxSpeed=2 \
+    VertTwoFingerScroll=0 \
+    RightEdge=2600 \
+    LeftEdge=1 \
+    ClickFinger1=0 \
+    ClickFinger2=0 \
+    ClickFinger3=0 \
+    LockedDrags=1

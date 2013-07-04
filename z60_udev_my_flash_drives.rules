@@ -1,0 +1,30 @@
+# use the following command to detect attributes
+# udevinfo --path=/sys/class/block/sdb1/ --query all 
+# udevinfo --path=/sys/class/block/sdb1/ --attribute-walk
+
+# mount V90 flash
+SUBSYSTEM=="block", KERNEL=="sd[a-z]1", ACTION=="add", ATTRS{vendor}=="JetFlash", ATTRS{model}=="TS2GJFV90", NAME="%k", GROUP="users", RUN+="/usr/bin/sudo -u cancel /usr/bin/pmount -c utf8 /dev/%k glam"
+
+# PDA flash card
+SUBSYSTEM=="block", KERNEL=="sd[a-z]1", ACTION=="add", ATTRS{vendor}=="ICSI", ATTRS{rev}=="1.6E", NAME="%k", GROUP="users", RUN+="/usr/bin/sudo -u cancel /usr/bin/pmount -c utf8 /dev/%k pda_flash"
+
+# mount old zDisk flash
+SUBSYSTEM=="block", KERNEL=="sd[a-z]", ACTION=="add", ATTRS{vendor}=="SigmaTel", ATTRS{model}=="MSCN", NAME="%k", GROUP="users", RUN+="/usr/bin/sudo -u cancel /usr/bin/pmount /dev/%k old_flash"
+
+# mount cellphone internal disk
+SUBSYSTEM=="block", KERNEL=="sd[a-z]1", ACTION=="add", ATTRS{vendor}=="SEMC    ", ATTRS{model}=="Int.Memory      ",  NAME="%k", GROUP="users", RUN+="/usr/bin/sudo -u cancel /usr/bin/pmount /dev/%k se_phone"
+
+# mount cellphone storage card
+SUBSYSTEM=="block", KERNEL=="sd[a-z]1", ACTION=="add", ATTRS{vendor}=="SEMC    ", ATTRS{model}=="Mem-Stick       ",  NAME="%k", GROUP="users", RUN+="/usr/bin/sudo -u cancel /usr/bin/pmount /dev/%k se_card"
+
+# remember operator:
+# IMPORT{program}="scsi_id -g -x -a -s $devpath -d $tempnode",
+
+# ipod mounting rules
+SUBSYSTEM=="block", KERNEL=="sd[a-z]2", ACTION=="add", ATTRS{vendor}=="Apple", ATTRS{model}=="iPod", ATTRS{rev}=="1.62", NAME="%k", GROUP="users", SYMLINK="ipod", RUN+="/usr/bin/sudo -u cancel /usr/bin/pmount /dev/%k ipod"
+
+# eee sd card reader
+SUBSYSTEM=="block", KERNEL=="sd[a-z]1", ACTION=="add", ATTRS{vendor}=="USB2.0  ", ATTRS{model}=="CardReader SD0  ", NAME="%k", GROUP="users", SYMLINK="sdcard1", RUN+="/usr/bin/sudo -u cancel /usr/bin/pmount /dev/%k sdcard1"
+
+# external drive
+SUBSYSTEM=="block", KERNEL=="sd[a-z]1", ACTION=="add", ATTRS{vendor}=="TEKRAM T", ATTRS{model}=="R-621S  2.5     ", ATTRS{size}=="78140160" NAME="%k", GROUP="users", SYMLINK="bk_usb_drive_1", RUN+="/usr/bin/sudo -u cancel /usr/bin/pmount /dev/%k bk_usb_drive_1"

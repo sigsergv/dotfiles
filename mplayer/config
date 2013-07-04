@@ -1,0 +1,18 @@
+# Write your default config options here!
+#ao=oss
+ao=alsa:noblock
+vo=xv
+dvd-device=/dev/sr0
+#subfont-encoding="CP1251"
+subcp=CP1251
+tv=driver=v4l2:input=1:width=640:height=480:device=/dev/video0:audiorate=48000:fps=30:gain=50
+#unicode=0
+monitoraspect=1.6
+softvol=1
+#dr=1
+#fs=1
+softvol-max=1000
+volstep=10
+subfont-text-scale=5
+#font=~/.mplayer/subfont.ttf
+#fontconfig=1

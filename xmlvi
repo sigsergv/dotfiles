@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xmlstarlet fo $1 | vim -R -

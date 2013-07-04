@@ -1,0 +1,15 @@
+application/pdf; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.pdf
+application/x-pdf; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.pdf
+application/x-bzpdf; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.pdf.bz2
+application/x-gzpdf; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.pdf.gz
+application/postscript; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.ps
+application/x-bzpostscript; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.ps.bz2
+application/x-gzpostscript; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.ps.gz
+image/x-eps; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.eps
+image/x-bzeps; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.eps.bz2
+image/x-gzeps; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.eps.gz
+application/x-dvi; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.dvi
+application/x-gzdvi; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.dvi.gz
+application/x-bzdvi; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.dvi.bz2
+image/vnd.djvu; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.djvu
+
