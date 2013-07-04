@@ -8,3 +8,5 @@ ci = commit
 [user]
 	name = Sergey Stolyarov
 	email = sergei@regolit.com
+[push]
+	default = matching
