@@ -1,9 +1,9 @@
 [alias]
-stat = status
-st = status
-ci = commit
+    stat = status
+    st = status
+    ci = commit
 ;  br = branch
-;  co = checkout
+    co = checkout
 ;  df = diff
 ;  lg = log -p
 [user]
