@@ -29,3 +29,5 @@ export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndF
 
 # these variables are disabled, place them to ~/.zshrc_local if needed
 # export GIT_SSH=$HOME/bin/git-ssh
+
+source ~/.zshenv_local

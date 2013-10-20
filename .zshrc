@@ -33,7 +33,6 @@ esac
 
 alias ll='ls -la --color=y'
 #alias f="find . -name "
-source ~/.zshrc_local
 
 ff() { find . -name \*$1\* | grep -v .svn }
 
@@ -49,3 +48,5 @@ setopt inc_append_history
 setopt extended_history
 setopt pushd_ignore_dups
 setopt no_bang_hist
+
+source ~/.zshrc_local
