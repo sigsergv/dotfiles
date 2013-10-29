@@ -52,4 +52,26 @@ defaults write com.apple.dock no-glass -bool true
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# large dock icons
+defaults write com.apple.dock largesize -float 96
+
+# speed up launchpad hide-show animation
+defaults write com.apple.dock springboard-show-duration -float 0.1
+defaults write com.apple.dock springboard-hide-duration -float 0.1
+
+# disable bouncing icon in the dock
+# defaults write com.apple.dock no-bouncing -bool TRUE
+
+# disable rubberband effect in lists/pages
+# defaults write -g NSScrollViewRubberbanding -int 0
+
+# show hidden application (⌘ H) icons in the dock as a translucent icons
+defaults write com.apple.dock showhidden -bool true
+
+# disable scroll animation
+defaults write -g NSScrollAnimationEnabled -bool false
+
+# disable .DS_Store creation on network drives
+defaults write com.apple.desktopservices DSDontWriteNetworkStores TRUE
+
 
