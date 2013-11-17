@@ -72,6 +72,6 @@ defaults write com.apple.dock showhidden -bool true
 defaults write -g NSScrollAnimationEnabled -bool false
 
 # disable .DS_Store creation on network drives
-defaults write com.apple.desktopservices DSDontWriteNetworkStores TRUE
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 
