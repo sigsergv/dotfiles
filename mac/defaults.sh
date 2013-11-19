@@ -63,7 +63,7 @@ defaults write com.apple.dock springboard-hide-duration -float 0.1
 # defaults write com.apple.dock no-bouncing -bool TRUE
 
 # disable rubberband effect in lists/pages
-# defaults write -g NSScrollViewRubberbanding -int 0
+defaults write -g NSScrollViewRubberbanding -int 0
 
 # show hidden application (⌘ H) icons in the dock as a translucent icons
 defaults write com.apple.dock showhidden -bool true
@@ -74,4 +74,5 @@ defaults write -g NSScrollAnimationEnabled -bool false
 # disable .DS_Store creation on network drives
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-
+# disable ssh and keychain interactions
+# defaults write org.openbsd.openssh KeychainIntegration -bool false
