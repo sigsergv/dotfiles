@@ -129,14 +129,11 @@ vnoremap <Del> "_d
 nnoremap dd "_dd
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 
-" Restore cursor to file position in previous editing session
-autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
-
 " some options that depends on 'autocmd' feature
 if has("autocmd")
+    " Restore cursor to file position in previous editing session
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
     " set 'textwidth' to 78 characters for all text files
     "autocmd FileType text setlocal textwidth=100
 
