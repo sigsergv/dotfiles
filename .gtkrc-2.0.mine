@@ -3,6 +3,7 @@
 ##
 gtk-can-change-accels = 1
 gtk-cursor-blink = 0
+gtk-error-bell = 0
 #gtk-recent-files-max-age = 0
 
 #gtk-icon-theme-name = "gnome"

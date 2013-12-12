@@ -84,7 +84,7 @@ set visualbell
 
 " enable mouse support
 "set mouse=vnc
-set mouse=vnc
+set mouse=a
 set timeoutlen=10
 
 " ignore case in search patterns
