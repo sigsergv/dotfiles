@@ -31,3 +31,8 @@ export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndF
 # export GIT_SSH=$HOME/bin/git-ssh
 
 source ~/.zshenv_local
+
+## all lines below this one should not be uncommented
+## This line for macos where less pager doesn't support mouse scroll
+# export MANPAGER="col -b | view -c 'set ft=man nomod nolist' -"
+# 
