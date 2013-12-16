@@ -34,5 +34,5 @@ source ~/.zshenv_local
 
 ## all lines below this one should not be uncommented
 ## This line for macos where less pager doesn't support mouse scroll
-# export MANPAGER="col -b | view -c 'set ft=man nomod nolist' -"
+# export MANPAGER="col -b | view -c 'set ft=man nomod nolist' -c 'set noic' -"
 # 
