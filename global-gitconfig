@@ -11,3 +11,5 @@
 ;	email = sergei@regolit.com
 [push]
 	default = matching
+[core]
+	quotepath = false
