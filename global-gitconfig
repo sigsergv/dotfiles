@@ -13,3 +13,4 @@
 	default = matching
 [core]
 	quotepath = false
+	precomposeunicode = true
