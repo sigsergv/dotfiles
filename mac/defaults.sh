@@ -76,3 +76,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # disable ssh and keychain interactions
 # defaults write org.openbsd.openssh KeychainIntegration -bool false
+
+# disable history-swipe for chrome
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
+
+# ... and for yandex browser
+defaults write ru.yandex.desktop.yandex-browser AppleEnableSwipeNavigateWithScrolls -bool FALSE
