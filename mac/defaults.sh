@@ -38,7 +38,8 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 defaults write com.apple.dock expose-group-by-app -bool false
 
 # Don’t show Dashboard as a Space
-defaults write com.apple.dock dashboard-in-overlay -bool true
+# (not needed anymore, could be controlled via Mission Control prefs pane)
+# defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # Remove the auto-hiding Dock delay
 #defaults write com.apple.Dock autohide-delay -float 0
@@ -47,7 +48,8 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 defaults write com.apple.dock autohide-time-modifier -float 0
 
 # Enable the 2D Dock
-defaults write com.apple.dock no-glass -bool true
+# (doesn't work in Mavericks anymore)
+# defaults write com.apple.dock no-glass -bool true
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
