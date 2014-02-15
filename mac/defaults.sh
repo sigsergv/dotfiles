@@ -61,6 +61,9 @@ defaults write com.apple.dock largesize -float 96
 defaults write com.apple.dock springboard-show-duration -float 0.1
 defaults write com.apple.dock springboard-hide-duration -float 0.1
 
+# speed up launchpad change pages speed
+defaults write com.apple.dock springboard-page-duration -float 0.1
+
 # disable bouncing icon in the dock
 # defaults write com.apple.dock no-bouncing -bool TRUE
 
