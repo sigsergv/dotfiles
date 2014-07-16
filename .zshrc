@@ -9,7 +9,7 @@ bindkey "^[[1;5C" forward-word
 zstyle :compinstall filename "$HOME/.zshrc"
 
 autoload -Uz compinit
-compinit
+compinit -u
 
 PS1='[%n@%m:%~]%70(l|
 |)%# '
@@ -24,12 +24,22 @@ dumb)
     ;;
 esac
 
-case $TERM in
-    xterm*|Eterm*|rxvt*)
-        function precmd { print -nP "\033]2;[zsh@%m:%~]%#\007\033]1;[%m:%~]%#\007" }
-        function preexec { local s=${2//\\/\\\\}; print -nP "\033]2;[zsh@%m:%~]%# $s\007\033]1;[%m:%~]%# $s\007" }
-    ;;
-esac
+# changes tab title when command is executed
+#case $TERM in
+#    xterm*|Eterm*|rxvt*)
+#        function precmd { print -nP "\033]2;[zsh@%m:%~]%#\007\033]1;[%m:%~]%#\007" }
+#        function preexec { local s=${2//\\/\\\\}; print -nP "\033]2;[zsh@%m:%~]%# $s\007\033]1;[%m:%~]%# $s\007" }
+#    ;;
+#esac
+
+setTerminalText () {
+    # echo works in bash & zsh
+    local mode=$1 ; shift
+    echo -ne "\033]$mode;$@\007"
+}
+stt_both  () { setTerminalText 0 $@; }
+stt_tab   () { setTerminalText 1 $@; }
+stt_title () { setTerminalText 2 $@; }
 
 alias ll='ls -la --color=y'
 alias gerp=grep
