@@ -6,11 +6,13 @@
     co = checkout
 ;  df = diff
 ;  lg = log -p
-;[user]
-;	name = Sergey Stolyarov
-;	email = sergei@regolit.com
 [push]
 	default = matching
+
 [core]
 	quotepath = false
 	precomposeunicode = true
+
+[user]
+	name = Sergey Stolyarov
+	email = (none)
