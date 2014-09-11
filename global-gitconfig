@@ -4,6 +4,10 @@
     ci = commit
     br = branch
     co = checkout
+
+; show detailed commit info, but without a full diff
+    info = show --name-status
+;    up = pull --rebase
 ;  df = diff
 ;  lg = log -p
 [push]
