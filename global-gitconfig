@@ -10,6 +10,11 @@
 ;    up = pull --rebase
 ;  df = diff
 ;  lg = log -p
+
+[user]
+	name = Sergey Stolyarov
+;	email = sergei@regolit.com
+
 [push]
 	default = matching
 
