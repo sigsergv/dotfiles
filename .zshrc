@@ -45,7 +45,7 @@ alias ll='ls -la --color=y'
 alias gerp=grep
 #alias f="find . -name "
 
-ff() { find . -name \*$1\* | grep -v .svn }
+#ff() { find . -name \*$1\* | grep -v .svn }
 
 setopt no_auto_menu
 setopt auto_pushd
