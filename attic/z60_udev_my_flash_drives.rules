@@ -1,3 +1,9 @@
+
+# udev rules file for my usb devices, requires pmount
+# How to install:
+# # cp z60_udev_my_flash_drives.rules /etc/udev/
+# # ln -s ../z60_udev_my_flash_drives.rules /etc/udev/rules.d/ 
+
 # use the following command to detect attributes
 # udevinfo --path=/sys/class/block/sdb1/ --query all 
 # udevinfo --path=/sys/class/block/sdb1/ --attribute-walk

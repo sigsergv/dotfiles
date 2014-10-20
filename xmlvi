@@ -1,3 +1,5 @@
 #!/bin/sh
 
+# script for viewing formatted and colored XML files
+
 xmlstarlet fo $1 | vim -R -

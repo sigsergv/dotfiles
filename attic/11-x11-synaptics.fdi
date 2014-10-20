@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- HAL policy file for touchpad, copy to /etc/hal/fdi/policy/ and restart hal -->
 <deviceinfo version="0.2">
   <device>
     <match key="info.capabilities" contains="input.touchpad">

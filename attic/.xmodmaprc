@@ -1,3 +1,4 @@
+! xmodmap rules for Acer Aspire V5
 keycode 122 = Home
 keycode 123 = End
 keycode 233 = Prior
