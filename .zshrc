@@ -48,6 +48,7 @@ alias gerp=grep
 #ff() { find . -name \*$1\* | grep -v .svn }
 
 setopt no_auto_menu
+setopt rmstarsilent
 setopt auto_pushd
 setopt extended_glob
 #setopt share_history
