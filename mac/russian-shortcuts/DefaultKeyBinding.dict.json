@@ -17,13 +17,12 @@
     "^е": "transpose:",
     "^н": "yank:",
     "^р": "deleteBackward:",
+    "^в": "deleteForward:",
     "^л": "deleteToEndOfParagraph:",
     "^д": "centerSelectionInVisibleArea:",
     "^щ": [ "insertNewlineIgnoringFieldEditor:", "moveBackward:" ],
-    "^в": "deleteForward:",
     "~^и": "moveWordBackward:",
     "~^И": "moveWordBackwardAndModifySelection:",
     "~^а": "moveWordForward:",
-    "~^А": "moveWordForwardAndModifySelection:",
-    "$^": "cycleToNextInputScript:"
+    "~^А": "moveWordForwardAndModifySelection:"
 }
