@@ -1,4 +1,5 @@
 {
+    "@ю": "cancelOperation:",
     "^ф": "moveToBeginningOfParagraph:",
     "^Ф": "moveToBeginningOfParagraphAndModifySelection:",
     "^у": "moveToEndOfParagraph:",
@@ -18,8 +19,11 @@
     "^р": "deleteBackward:",
     "^л": "deleteToEndOfParagraph:",
     "^д": "centerSelectionInVisibleArea:",
+    "^щ": [ "insertNewlineIgnoringFieldEditor:", "moveBackward:" ],
+    "^в": "deleteForward:",
     "~^и": "moveWordBackward:",
     "~^И": "moveWordBackwardAndModifySelection:",
     "~^а": "moveWordForward:",
-    "~^А": "moveWordForwardAndModifySelection"
+    "~^А": "moveWordForwardAndModifySelection:",
+    "$^": "cycleToNextInputScript:"
 }
