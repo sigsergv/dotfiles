@@ -24,5 +24,10 @@
     "~^и": "moveWordBackward:",
     "~^И": "moveWordBackwardAndModifySelection:",
     "~^а": "moveWordForward:",
-    "~^А": "moveWordForwardAndModifySelection:"
+    "~^А": "moveWordForwardAndModifySelection:",
+
+    "^u": "deleteToBeginningOfParagraph:",
+    "^г": "deleteToBeginningOfParagraph:",
+    "^k": "deleteToEndOfParagraph:",
+    "^л": "deleteToEndOfParagraph:"
 }
