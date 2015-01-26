@@ -32,6 +32,7 @@ case $TERM in
 esac
 
 alias ll='ls -la --color=y'
+alias gerp=grep
 #alias f="find . -name "
 
 ff() { find . -name \*$1\* | grep -v .svn }
