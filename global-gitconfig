@@ -1,13 +1,13 @@
 [alias]
-    stat = status
-    st = status
-    ci = commit
-    br = branch
-    co = checkout
+	stat = status
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
 
 ; show detailed commit info, but without a full diff
-    info = show --name-status
-    reflogdate = reflog --date=iso
+	info = show --name-status
+	reflogdate = reflog --date=iso
 ;    up = pull --rebase
 ;  df = diff
 ;  lg = log -p
@@ -15,8 +15,8 @@
 [core]
 	quotepath = false
 	precomposeunicode = true
-    ; always jump to first line
-    editor = vim +1
+	; always jump to first line
+	editor = vim +1
 
 [user]
 	name = Sergey Stolyarov
@@ -24,5 +24,7 @@
 	email = (none)
 
 [push]
-    default = current
+	default = current
 
+[pull]
+	rebase = true
