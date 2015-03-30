@@ -1,3 +1,4 @@
+; vim: set noexpandtab:
 [alias]
 	stat = status
 	st = status
