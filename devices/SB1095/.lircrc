@@ -1,0 +1,18 @@
+begin
+  prog = irexec
+  button = KEY_PLAYPAUSE
+  config = xte 'key XF86AudioPlay'
+end
+
+begin
+  prog = irexec
+  button = KEY_NEXT
+  config = xte 'key XF86AudioNext'
+end
+
+
+begin
+  prog = irexec
+  button = KEY_PREV
+  config = xte 'key XF86AudioPrev'
+end
