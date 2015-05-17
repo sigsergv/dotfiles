@@ -7,3 +7,10 @@ Usage
 =====
 
 Run irexec in daemon mode.
+
+Automation
+==========
+
+Install
+
+    apt-get install xautomation
