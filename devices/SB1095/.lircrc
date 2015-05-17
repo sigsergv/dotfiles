@@ -10,9 +10,22 @@ begin
   config = xte 'key XF86AudioNext'
 end
 
-
 begin
   prog = irexec
   button = KEY_PREV
   config = xte 'key XF86AudioPrev'
+end
+
+begin
+  prog = irexec
+  button = KEY_VOLUMEUP
+  repeat = 1
+  config = xte 'keydown Alt_L' 'keydown Up' 'keyup Up' 'keyup Alt_L'
+end
+
+begin
+  prog = irexec
+  button = KEY_VOLUMEDOWN
+  repeat = 1
+  config = xte 'keydown Alt_L' 'keydown Down' 'keyup Down' 'keyup Alt_L'
 end
