@@ -10,6 +10,7 @@ begin
   config = xte 'key XF86AudioNext'
 end
 
+
 begin
   prog = irexec
   button = KEY_PREV
@@ -20,12 +21,12 @@ begin
   prog = irexec
   button = KEY_VOLUMEUP
   repeat = 1
-  config = xte 'keydown Alt_L' 'keydown Up' 'keyup Up' 'keyup Alt_L'
+  config = sh -c 'pactl set-sink-mute 1 false ; pactl set-sink-volume 1 +5%'
 end
 
 begin
   prog = irexec
   button = KEY_VOLUMEDOWN
   repeat = 1
-  config = xte 'keydown Alt_L' 'keydown Down' 'keyup Down' 'keyup Alt_L'
+  config = sh -c 'pactl set-sink-mute 1 false ; pactl -- set-sink-volume 1 -5%'
 end

@@ -1,0 +1,5 @@
+#!/bin/sh
+# place to ~/.config/autostart/pulse-shit
+
+pacmd set-default-sink 1
+pacmd set-sink-volume 1 21000
