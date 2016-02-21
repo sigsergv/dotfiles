@@ -35,3 +35,14 @@ Both Linux and Mac OS X
 
     ln -s `pwd`/.vimrc ~/
     ln -s `pwd`/global-gitconfig ~/.gitconfig
+
+
+Other
+=====
+
+Install .vimrc
+--------------
+
+    curl -o ~/.vimrc -L https://github.com/sigsergv/dotfiles/raw/master/.vimrc
+
+
