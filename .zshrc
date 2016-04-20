@@ -42,8 +42,9 @@ stt_tab   () { setTerminalText 1 $@; }
 stt_title () { setTerminalText 2 $@; }
 
 alias ll='ls -la --color=y'
-alias gerp=grep
+#alias gerp=grep
 #alias f="find . -name "
+alias grep="/bin/grep --color --exclude-dir=.svn --exclude-dir=.hg --exclude-dir=.git"
 
 #ff() { find . -name \*$1\* | grep -v .svn }
 

@@ -19,7 +19,7 @@ export HISTSIZE=1000
 export SAVEHIST=1000
 export EDITOR=vim
 export PATH=/usr/bin:/usr/games:/bin:~/bin
-export GREP_OPTIONS="--color --exclude-dir=.svn --exclude-dir=.hg --exclude-dir=.git"
+#export GREP_OPTIONS="--color --exclude-dir=.svn --exclude-dir=.hg --exclude-dir=.git"
 #export TERM=xterm
 
 export DEBFULLNAME="Sergey Stolyarov"
