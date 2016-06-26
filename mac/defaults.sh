@@ -108,3 +108,15 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
 
 # ... and for yandex browser
 defaults write ru.yandex.desktop.yandex-browser AppleEnableSwipeNavigateWithScrolls -bool FALSE
+
+# ... and for Vivaldi browser
+defaults write com.vivaldi.Vivaldi AppleEnableSwipeNavigateWithScrolls -bool FALSE
+
+# disable Photos app opening automatically
+defaults write com.apple.ImageCapture disableHotPlug -bool true
+
+# turn off animations in finder
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+# disable window resize slow speed
+defaults write -g NSWindowResizeTime -float 0.001
