@@ -25,7 +25,7 @@ export PATH=/usr/bin:/usr/games:/bin:~/bin
 export DEBFULLNAME="Sergey Stolyarov"
 export DEBEMAIL="sergei.stolyarov@regolit.com"
 export WORDCHARS='*?_-.[]~=;!#$%^(){}<>'
-export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dawt.useSystemAAFontSettings=lcd' 
+#export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dawt.useSystemAAFontSettings=lcd' 
 
 # these variables are disabled, place them to ~/.zshrc_local if needed
 # export GIT_SSH=$HOME/bin/git-ssh

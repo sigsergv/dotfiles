@@ -73,6 +73,10 @@ menu Encoding.windows-1251 :e ++enc=cp1251 ++ff=dos<CR>
 menu Encoding.koi8-r :e ++enc=koi8-r ++ff=unix<CR>
 map <F9> :emenu Encoding.<TAB>
 
+menu Indentation.tabs :set noexpandtab<CR>
+menu Indentation.spaces :set expandtab<CR>
+map <F5> :emenu Indentation.<TAB>
+
 " always show status line
 set laststatus=2
 
