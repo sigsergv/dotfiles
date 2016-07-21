@@ -1,0 +1,56 @@
+// eclipse-like key bindings, for sublime text v.3
+// author: Sergey Stolyarov <sergei@regolit.com>
+[
+    // disable some hotkeys
+    { "keys": ["ctrl+f3"], "command": "unbound" },
+    { "keys": ["ctrl+shift+f3"], "command": "unbound" },
+    { "keys": ["ctrl+g"], "command": "unbound" },
+    { "keys": ["ctrl+q"], "command": "unbound" },
+
+    // find selected text
+    { "keys": ["ctrl+k"], "command": "find_under" },
+    { "keys": ["ctrl+shift+k"], "command": "find_under_prev" },
+
+    // delete word before cursor
+    { "keys": ["ctrl+w"], "command": "delete_word", "args": { "forward": false } },
+
+    // delete line
+    { "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+    // auto completion
+    { "keys": ["ctrl+p"], "command": "auto_complete" },
+    { "keys": ["ctrl+space"], "command": "auto_complete" },
+
+    // open files list overlay
+    { "keys": ["ctrl+3"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
+    // add line
+    { "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} },
+
+    { "keys": ["ctrl+shift+p"], "command": "move_to", "args": {"to": "brackets"} },
+
+    // jump to line
+    { "keys": ["ctrl+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+
+    // use Ctrl+H for searching in files
+    { "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    { "keys": ["ctrl+shift+f"], "command": "unbound" },
+
+    // use Ctrl+F both for searching and replacing
+    { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "replace"} },
+    { "keys": ["ctrl+а"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+
+    // expand selection to complete line
+    { "keys": ["ctrl+shift+l"], "command": "expand_selection", "args": {"to": "line"} },
+
+    // case convertions
+    { "keys": ["alt+up"], "command": "upper_case" },
+    { "keys": ["alt+down"], "command": "lower_case" },
+
+    // close all opened tabs
+    {"keys": ["shift+ctrl+w"], "command": "close_all"},
+
+    // workaround for broken search direction (see http://www.sublimetext.com/forum/viewtopic.php?f=3&t=11331)
+    { "keys": ["ctrl+i"], "command": "noop" },
+    { "keys": ["ctrl+shift+i"], "command": "noop" }
+]
