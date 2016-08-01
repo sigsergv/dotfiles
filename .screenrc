@@ -1,0 +1,1 @@
+bind / eval "scrollback 0" "scrollback 15000" "clear"
