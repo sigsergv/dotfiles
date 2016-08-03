@@ -133,6 +133,10 @@ vnoremap <Del> "_d
 nnoremap dd "_dd
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 
+
+" make CTRL-W to delete word correctly
+imap <C-w> <C-o>db
+
 " some options that depends on 'autocmd' feature
 if has("autocmd")
     " Restore cursor to file position in previous editing session
