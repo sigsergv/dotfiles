@@ -135,7 +135,7 @@ set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁ
 
 
 " make CTRL-W to delete word correctly
-imap <C-w> <C-\><C-o>db
+imap <C-w> <C-\><C-o>dB
 
 " some options that depends on 'autocmd' feature
 if has("autocmd")
