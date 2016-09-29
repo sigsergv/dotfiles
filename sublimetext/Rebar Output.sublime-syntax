@@ -1,0 +1,9 @@
+%YAML 1.2
+---
+name: Rebar Output
+hidden: true
+scope: source.build_results
+contexts:
+  main:
+    - match: 'Compile Error'
+      scope: message.error
