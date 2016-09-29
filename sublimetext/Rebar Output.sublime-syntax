@@ -5,5 +5,5 @@ hidden: true
 scope: source.build_results
 contexts:
   main:
-    - match: 'Compile Error'
+    - match: '^.*\[error\] Compile Error,.*'
       scope: message.error
