@@ -1,3 +1,7 @@
+# don't show startup message
+startup_message off
+
+# bind 
 bind / eval "scrollback 0" "scrollback 15000" "clear"
 
 # start screen numbering from 1 not 0
@@ -5,3 +9,12 @@ bind c screen 1
 bind 0 select 10
 screen 1
 select 1
+
+# persistent statusbar
+hardstatus alwaysfirstline
+#shelltitle 'bash'
+
+# status line: windows list, time
+#hardstatus string '%{gk}[%{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= w}%?%+Lw%?%? %{g}][%{d}%l%{g}][ %{= w}%Y/%m/%d %0C:%s%a%{g} ]%{W}'
+hardstatus string '%{gk}[ %{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= w}%?%+Lw%?%? %{g}] [ %H ]'
+
