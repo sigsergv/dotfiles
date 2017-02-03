@@ -5,7 +5,6 @@
 	ci = commit
 	br = branch
 	co = checkout
-	cp = cherry-pick
 
 ; show detailed commit info, but without a full diff
 	info = show --name-status

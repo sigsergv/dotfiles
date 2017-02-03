@@ -1,1 +1,7 @@
 bind / eval "scrollback 0" "scrollback 15000" "clear"
+
+# start screen numbering from 1 not 0
+bind c screen 1
+bind 0 select 10
+screen 1
+select 1

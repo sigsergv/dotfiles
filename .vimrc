@@ -92,7 +92,7 @@ set mouse=a
 set timeoutlen=10
 
 " ignore case in search patterns
-set ignorecase
+set noignorecase
 
 " tabulation and indenting options
 set tabstop=4       " tabstop value
