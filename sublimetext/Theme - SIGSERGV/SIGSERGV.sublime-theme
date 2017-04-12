@@ -8,9 +8,9 @@
     },
     {
         "class": "sidebar_tree",
-        "row_padding": [16, 4, 16, 4],
+        "row_padding": [1, 1, 1, 1],
         "indent": 10,
-        "indent_offset": 16,
+        "indent_offset": 5,
         "indent_top_level": false,
         "dark_content": false,
         "spacer_rows": true
@@ -158,10 +158,10 @@
     {
         "class": "tabset_control",
         "layer0.opacity": 1.0,
-        "content_margin": [4, 0, 8, 0],
+        "content_margin": [0, 0, 0, 0],
         "tint_index": 0,
-        "tab_height": 34,
-        "tab_overlap": 16
+        "tab_height": 27,
+        "tab_overlap": 20
     },
     {
         "class": "tabset_control",
@@ -236,14 +236,14 @@
         "attributes": ["dirty", "file_light"],
         "settings": ["highlight_modified_tabs"],
         "layer2.opacity": 0.8,
-        "layer2.tint": [255, 100, 0, 0.6]
+        "layer2.tint": [255, 0, 0, 0.6]
     },
     {
         "class": "tab_control",
         "attributes": ["dirty", "selected"],
         "settings": ["highlight_modified_tabs"],
         "layer2.opacity": 1.0,
-        "layer2.tint": [255, 100, 0, 0.6]
+        "layer2.tint": [255, 0, 0, 0.6]
     },
     {
         "class": "tab_control",
@@ -485,7 +485,7 @@
     {
         "class": "minimap_control",
         "settings": ["always_show_minimap_viewport"],
-        "viewport_color": [128, 128, 128, 0.18],
+        "viewport_color": [0, 128, 128, 0.18],
         "viewport_opacity": 1.0,
     },
     {
@@ -534,7 +534,7 @@
         "layer0.opacity": 1.0
     },
     {
-        "class": "auto_complete",
+        "class": "auto_comple",
         "row_padding": [4, 1, 4, 1],
         "tint_index": 0,
         "layer0.opacity": 1.0
@@ -790,7 +790,7 @@
         "layer0.texture": "Theme - SIGSERGV/common/light/input.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 4,
-        "content_margin": 4
+        "content_margin": [0,4,0,0]
     },
     {
         "class": "dropdown_button_control",
@@ -810,8 +810,8 @@
         "layer0.texture": "Theme - SIGSERGV/common/light/button.png",
         "layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" },
         "layer0.inner_margin": 4,
-        "min_size": [80, 0],
-        "content_margin": [10, 6]
+        "min_size": [50, 20],
+        "content_margin": [1, 1]
     },
     {
         "class": "button_control",
@@ -830,14 +830,14 @@
     },
     {
         "class": "icon_button_group",
-        "spacing": 4
+        "spacing": 0
     },
     {
         "class": "icon_button_control",
         "layer0.texture": "Theme - SIGSERGV/common/light/icon_button_highlight.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": 2,
-        "content_margin": 2
+        "content_margin": 0
     },
     {
         "class": "icon_button_control",
