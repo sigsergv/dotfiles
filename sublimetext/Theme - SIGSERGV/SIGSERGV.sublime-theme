@@ -8,7 +8,7 @@
     },
     {
         "class": "sidebar_tree",
-        "row_padding": [1, 1, 1, 1],
+        "row_padding": [8, 1, 1, 1],
         "indent": 10,
         "indent_offset": 5,
         "indent_top_level": false,
