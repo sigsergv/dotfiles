@@ -450,9 +450,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFFFB5</string>
+				<string>#050000</string>
 				<key>background</key>
-				<string>#000000</string>
+				<string>#cccccc</string>
 			</dict>
 		</dict>
 
