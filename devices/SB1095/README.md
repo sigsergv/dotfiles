@@ -43,9 +43,10 @@ Configure lircd
   Where "hw:Pro" is from `cat /proc/asound/cards`:
   ~~~
   # cat /proc/asound/cards
-   0 [HDMI           ]: HDA-Intel - HDA Intel HDMI                         HDA Intel HDMI at 0xf7210000 irq 49
-   1 [Pro            ]: USB-Audio - SB X-Fi Surround 5.1 Pro
-                        Creative Technology Ltd SB X-Fi Surround 5.1 Pro at usb-0000:00:14.0-3, full sp
+  0 [HDMI           ]: HDA-Intel - HDA Intel HDMI
+                       HDA Intel HDMI at 0xf7210000 irq 49
+  1 [Pro            ]: USB-Audio - SB X-Fi Surround 5.1 Pro
+                       Creative Technology Ltd SB X-Fi Surround 5.1 Pro at usb-0000:00:14.0-3, full sp
   ~~~
 * copy `.lircrc` to `~/.lircr`
 * create file `/home/muz/.config/autostart/irexec.desktop` with the following contents:
