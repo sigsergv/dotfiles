@@ -49,5 +49,10 @@ Configure lircd
   ~~~
 * copy `.lircrc` to `~/.lircr`
 * create file `/home/muz/.config/autostart/irexec.desktop` with the following contents:
+  ~~~
+  [Desktop Entry]
+  Type=Application
+  Exec=/usr/bin/irexec -d
+  ~~~
 
 
