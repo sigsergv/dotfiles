@@ -48,7 +48,7 @@ Configure lircd
   1 [Pro            ]: USB-Audio - SB X-Fi Surround 5.1 Pro
                        Creative Technology Ltd SB X-Fi Surround 5.1 Pro at usb-0000:00:14.0-3, full sp
   ~~~
-* copy `.lircrc` to `~/.lircr`
+* copy `.lircrc` to `~/.lircrc`
 * create file `/home/muz/.config/autostart/irexec.desktop` with the following contents:
   ~~~
   [Desktop Entry]
