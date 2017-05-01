@@ -1,0 +1,52 @@
+begin
+  prog = irexec
+  button = play-pause
+  config = xte 'key XF86AudioPlay'
+end
+
+begin
+  prog = irexec
+  button = knobMute
+  config = xte 'key XF86AudioPlay'
+end
+
+begin
+  prog = irexec
+  button = ff
+  config = xte 'key XF86AudioNext'
+end
+
+begin
+  prog = irexec
+  button = bb
+  config = xte 'key XF86AudioPrev'
+end
+
+begin
+  prog = irexec
+  button = knobvolup
+  repeat = 1
+  config = sh -c 'pactl set-sink-mute 1 false ; pactl set-sink-volume 1 +3%'
+end
+
+begin
+  prog = irexec
+  button = knobvoldn
+  repeat = 1
+  config = sh -c 'pactl set-sink-mute 1 false ; pactl -- set-sink-volume 1 -3%'
+end
+
+begin
+  prog = irexec
+  button = volup
+  repeat = 1
+  config = sh -c 'pactl set-sink-mute 1 false ; pactl set-sink-volume 1 +3%'
+end
+
+begin
+  prog = irexec
+  button = voldn
+  repeat = 1
+  config = sh -c 'pactl set-sink-mute 1 false ; pactl -- set-sink-volume 1 -3%'
+end
+
