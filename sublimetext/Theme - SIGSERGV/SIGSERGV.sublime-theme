@@ -307,6 +307,12 @@
     },
     {
         "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "fg": [192, 0, 0],
+        "shadow_color": [0, 0, 0, 0.12]
+    },
+    {
+        "class": "tab_label",
         "attributes": ["transient"],
         "font.italic": true
     },
