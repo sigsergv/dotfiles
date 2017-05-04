@@ -240,6 +240,13 @@
     },
     {
         "class": "tab_control",
+        "attributes": ["selected", "dirty"],
+        "settings": ["highlight_modified_tabs"],
+        "layer2.opacity": 0.8,
+        "layer2.tint": [128, 0, 0, 0.9]
+    },
+    {
+        "class": "tab_control",
         "settings": ["!show_tab_close_buttons"],
         "content_margin": [26, 7, 20, 4]
     },
