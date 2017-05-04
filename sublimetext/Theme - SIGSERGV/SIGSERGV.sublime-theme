@@ -228,22 +228,15 @@
     },
     {
         "class": "tab_control",
-        "attributes": ["dirty"],
-        "settings": ["highlight_modified_tabs"],
+        "attributes": ["dirty", "file_light"],
+        "settings": ["highlight_modified_tabs"]
     },
     {
         "class": "tab_control",
-        "attributes": ["dirty", "file_light"],
+        "attributes": ["selected"],
         "settings": ["highlight_modified_tabs"],
         "layer2.opacity": 0.8,
-        "layer2.tint": [255, 0, 0, 0.6]
-    },
-    {
-        "class": "tab_control",
-        "attributes": ["dirty", "selected"],
-        "settings": ["highlight_modified_tabs"],
-        "layer2.opacity": 1.0,
-        "layer2.tint": [255, 0, 0, 0.6]
+        "layer2.tint": [23, 190, 17, 0.9]
     },
     {
         "class": "tab_control",
