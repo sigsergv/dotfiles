@@ -248,7 +248,7 @@
     {
         "class": "tab_control",
         "settings": ["!show_tab_close_buttons"],
-        "content_margin": [26, 7, 1, 4]
+        "content_margin": [26, 7, 20, 4]
     },
     {
         "class": "tab_control",
