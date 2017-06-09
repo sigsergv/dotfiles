@@ -66,7 +66,7 @@ setopt extended_glob
 setopt hist_ignore_all_dups
 #setopt hist_no_store
 setopt hist_reduce_blanks
-setopt histignorespace
+setopt HIST_IGNORE_SPACE
 setopt inc_append_history
 setopt extended_history
 setopt pushd_ignore_dups
