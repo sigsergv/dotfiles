@@ -1,0 +1,15 @@
+pcm.softvol {
+    type softvol
+    slave {
+        pcm "hw:1,0"
+    }
+    control {
+        name "ExternalSC"
+        card 1
+    }
+}
+
+pcm.!default {
+    type plug
+    slave.pcm "softvol"
+}
