@@ -1,0 +1,11 @@
+/*
+ * Copy/symlink this file to your firefox profile directory:
+ * 
+ * Macos: $HOME/Library/Application\ Support/Firefox/Profiles/profile_name/chrome
+ * Linux: $HOME/.mozilla/firefox/profile_name/chrome
+ */
+
+@-moz-document url(about:newtab) {
+    #newtab-search-container, #newtab-search-logo { display:none !important; } 
+    #newtab-margin-top, #newtab-search-container { display:none!important; }
+} 
