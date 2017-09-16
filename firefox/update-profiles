@@ -1,0 +1,74 @@
+#!/usr/bin/env python2.7
+
+"""
+This script updates all firefox profiles (all mentioned files will be replaced!):
+
+Install symlinks to files: 
+
+* userChrome.css
+* userContent.css
+
+Supported operating systems: Macos, Linux
+"""
+
+from __future__ import print_function
+
+import platform
+import os.path
+import ConfigParser
+from sys import exit
+
+# detect OS
+
+system = platform.system()
+
+if system == 'Darwin':
+    FF_ROOT = os.path.expanduser('~/Library/Application Support/Firefox')
+    PROFILES_CONFIG = os.path.join(FF_ROOT, 'profiles.ini')
+    PROFILES_PATH = FF_ROOT
+elif system == 'Linux':
+    FF_ROOT = os.path.expanduser('~/.mozilla/firefox')
+    PROFILES_CONFIG = os.path.join(FF_ROOT, 'profiles.ini')
+    PROFILES_PATH = FF_ROOT
+else:
+    print('OS not supported')
+    exit(1)
+
+# prepare chrome files
+CHROME_FILES = ('userChrome.css', 'userContent.css')
+
+# read profiles config and fetch all profile
+config = ConfigParser.ConfigParser()
+config.read(PROFILES_CONFIG)
+
+profiles = []
+
+for s in config.sections():
+    if s.startswith('Profile'):
+        profile_path = os.path.join(FF_ROOT, config.get(s, 'Path'))
+
+        # install chrome files
+        chrome_path = os.path.join(profile_path, 'chrome')
+
+        if not os.path.exists(chrome_path):
+            os.mkdir(chrome_path)
+
+        if not os.path.isdir(chrome_path):
+            print('Target directory `{0}` is not a directory!'.format(chrome_path))
+            continue
+
+        for fn in CHROME_FILES:
+            src = os.path.abspath(fn)
+            dst = os.path.join(chrome_path, fn)
+            try:
+                os.unlink(dst)
+            except:
+                pass
+            try:
+                os.symlink(src, dst)
+            except:
+                print('Failed to install file {0} to `{1}`'.format(fn, dst))
+
+        profiles.append(profile_path)
+
+# print(profiles)
