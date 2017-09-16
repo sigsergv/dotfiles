@@ -29,8 +29,17 @@
   -moz-padding-start: 1px !important;
   -moz-padding-end: 1px !important;
   max-width: 18px !important; /* small enough to make sure there's no title -favicon is 16px long- */
+  min-width: 30px !important;
 }
 
 .tab-close-button {
   display: none !important;
+}
+
+/* prevent tab overflow */
+.tabbrowser-tab {
+    min-width: initial !important;
+}
+.tab-content {
+    overflow: hidden !important;
 }
