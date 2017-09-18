@@ -11,7 +11,7 @@ Install symlinks to files:
 Supported operating systems: Macos, Linux
 """
 
-from __future__ import print_function, with_statement
+from __future__ import print_function
 
 import platform
 import os.path
@@ -35,19 +35,13 @@ else:
     exit(1)
 
 # prepare chrome files
+CHROME_FILES = ('userChrome.css', 'userContent.css')
 
 # read profiles config and fetch all profile
 config = ConfigParser.ConfigParser()
 config.read(PROFILES_CONFIG)
 
 profiles = []
-
-usercontent_css_path = os.path.abspath('userContent.css')
-userchrome_css_path = os.path.abspath('userChrome.css')
-if system == 'Darwin':
-    userchrome_os_css_path = os.path.abspath('userChrome.macos.css')
-elif system == 'Linux':
-    userchrome_os_css_path = os.path.abspath('userChrome.linux.css')
 
 for s in config.sections():
     if s.startswith('Profile'):
@@ -63,26 +57,17 @@ for s in config.sections():
             print('Target directory `{0}` is not a directory!'.format(chrome_path))
             continue
 
-        # userChrome.css
-
-        dst = os.path.join(chrome_path, 'userChrome.css')
-        try:
-            os.unlink(dst)
-        except:
-            pass
-        with open(dst, 'w') as fp:
-            fp.write('@include url("file://{0}");\n'.format(userchrome_css_path))
-            fp.write('@include url("file://{0}");\n'.format(userchrome_os_css_path))
-
-
-        # userContent.css
-        dst = os.path.join(chrome_path, 'userContent.css')
-        try:
-            os.unlink(dst)
-        except:
-            pass
-        os.symlink(usercontent_css_path, dst)
-
+        for fn in CHROME_FILES:
+            src = os.path.abspath(fn)
+            dst = os.path.join(chrome_path, fn)
+            try:
+                os.unlink(dst)
+            except:
+                pass
+            try:
+                os.symlink(src, dst)
+            except:
+                print('Failed to install file {0} to `{1}`'.format(fn, dst))
 
         profiles.append(profile_path)
 
