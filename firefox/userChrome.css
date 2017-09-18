@@ -11,8 +11,8 @@
 }
 
 /* for Macos "Compact light" theme */
-#TabsToolbar {
-  margin-left: -50px !important;
+#titlebar-placeholder-on-TabsToolbar-for-captions-buttons {
+	max-width: 10px !important;
 }
 
 .tab-throbber:not([pinned]),
@@ -25,9 +25,11 @@
   padding-bottom: 0px !important;
 }
 
+.tabbrowser-tab[pinned] .tab-icon-image {
+	margin-left: -2px;
+}
+
 .tabbrowser-tab[pinned] {
-  -moz-padding-start: 1px !important;
-  -moz-padding-end: 1px !important;
   max-width: 18px !important; /* small enough to make sure there's no title -favicon is 16px long- */
   min-width: 30px !important;
 }
