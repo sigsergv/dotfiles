@@ -97,7 +97,7 @@ set noignorecase
 " tabulation and indenting options
 set tabstop=4       " tabstop value
 set shiftwidth=4    " Number of spaces to use for each step of (auto)indent
-set expandtab       " use spaces instead of tab, use <C-v><Tab> to insert a tabulation symbol
+"set expandtab       " use spaces instead of tab, use <C-v><Tab> to insert a tabulation symbol
 set smarttab        " smart Backspace behaviour
 
 " don't display VIm greating message
@@ -207,3 +207,4 @@ if match($TERM, "screen")!=-1
   set lines-=1
 endif
 
+execute pathogen#infect()
