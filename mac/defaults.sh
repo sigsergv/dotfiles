@@ -120,3 +120,10 @@ defaults write com.apple.finder DisableAllAnimations -bool true
 
 # disable window resize slow speed
 defaults write -g NSWindowResizeTime -float 0.001
+
+
+# attempt to fix weird scrolling
+defaults write .GlobalPreferences com.apple.trackpad.scrolling 0.08
+
+# set trackpad pointer speed
+defaults write .GlobalPreferences com.apple.trackpad.scaling 0.5
