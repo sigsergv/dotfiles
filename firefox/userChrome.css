@@ -10,9 +10,14 @@
   -moz-padding-end: 0px !important; /* default: 9px */
 }
 
-/* for Macos "Compact light" theme */
+/* for Macos "Compact light" theme, firefox < 57 only */
 #titlebar-placeholder-on-TabsToolbar-for-captions-buttons {
 	max-width: 10px !important;
+}
+
+/* for Macos "Compact light" theme, firefox < 57 only */
+.titlebar-placeholder[type="pre-tabs"] {
+	max-width: 5px !important;
 }
 
 .tab-throbber:not([pinned]),
@@ -26,7 +31,7 @@
 }
 
 .tabbrowser-tab[pinned] .tab-icon-image {
-	margin-left: -2px;
+	margin-left: -5px;
 }
 
 .tabbrowser-tab[pinned] {
