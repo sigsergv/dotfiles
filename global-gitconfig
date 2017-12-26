@@ -5,6 +5,7 @@
 	ci = commit
 	br = branch
 	co = checkout
+	full-clean = clean -dfX
 
 ; show detailed commit info, but without a full diff
 	info = show --name-status
