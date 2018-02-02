@@ -45,4 +45,8 @@ Install .vimrc
 
     curl -o ~/.vimrc -L https://github.com/sigsergv/dotfiles/raw/master/.vimrc
 
+Fixes and improvements for linux/kde
+------------------------------------
 
+    cp intel-kde-fixes.sh freetype2-fix.sh $HOME/.config/plasma-workspace/env/
+    chmod +x $HOME/.config/plasma-workspace/env/*.sh
