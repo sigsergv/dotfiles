@@ -43,6 +43,8 @@ Other
 Install .vimrc
 --------------
 
+Install pathogen from <https://github.com/tpope/vim-pathogen>.
+
     curl -o ~/.vimrc -L https://github.com/sigsergv/dotfiles/raw/master/.vimrc
 
 Fixes and improvements for linux/kde
