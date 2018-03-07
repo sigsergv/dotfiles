@@ -1,7 +1,7 @@
 {
 	"always_show_minimap_viewport": true,
 	"auto_complete": false,
-	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
+	"color_scheme": "Packages/User/Mac Classic SIGSERGV.tmTheme",
 	"enable_tab_scrolling": false,
 	"file_exclude_patterns":
 	[
@@ -10,6 +10,8 @@
 	],
 	"font_face": "Liberation Mono",
 	"font_size": 9,
+	"font_options": ["subpixel_antialias"],
+	"theme_font_options": ["subpixel_antialias"],
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -22,12 +24,12 @@
 	"mouse_wheel_switches_tabs": false,
 	"reveal-on-activate": false,
 	"scroll_speed": 0,
+	"show_definitions": false,
 	"show_encoding": true,
 	"show_tab_close_buttons": false,
+	"theme": "SIGSERGV.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"update_check": false,
 	"word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?",
-	"word_wrap": true,
-	"show_definitions": false
+	"word_wrap": true
 }
-
