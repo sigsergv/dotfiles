@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#SINK=$(pactl list sinks short|head -n1|cut -f1)
+#
+#echo $SINK
+#pactl set-sink-mute $SINK false
+#pactl set-sink-volume $SINK -3%
+
+amixer -c 1 sset ExternalSC 2%-

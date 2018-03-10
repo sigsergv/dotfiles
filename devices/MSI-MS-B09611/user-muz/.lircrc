@@ -1,0 +1,51 @@
+begin
+  prog = irexec
+  button = play-pause
+  config = xte 'key XF86AudioPlay'
+end
+
+begin
+  prog = irexec
+  button = knobMute
+  config = xte 'key XF86AudioPlay'
+end
+
+begin
+  prog = irexec
+  button = ff
+  config = xte 'key XF86AudioNext'
+end
+
+begin
+  prog = irexec
+  button = bb
+  config = xte 'key XF86AudioPrev'
+end
+
+begin
+  prog = irexec
+  button = knobvolup
+  repeat = 1
+  config = /home/muz/bin/volume_up
+end
+
+begin
+  prog = irexec
+  button = knobvoldn
+  repeat = 1
+  config = /home/muz/bin/volume_down
+end
+
+begin
+  prog = irexec
+  button = volup
+  repeat = 1
+  config = /home/muz/bin/volume_up
+end
+
+begin
+  prog = irexec
+  button = voldn
+  repeat = 1
+  config = /home/muz/bin/volume_down
+end

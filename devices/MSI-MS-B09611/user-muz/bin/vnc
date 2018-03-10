@@ -1,0 +1,7 @@
+#!/bin/sh
+
+while true
+do	
+	/home/muz/bin/start-vnc-server
+	#/usr/bin/x11vnc -repeat -forever -shared -display :0 -passwdfile /home/muz/.vncpasswd -oa /home/muz/.x11vnc.log
+done
