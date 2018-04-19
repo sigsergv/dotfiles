@@ -1,0 +1,12 @@
+diff -uNr kscreenlocker-5.12.2.orig/greeter/authenticator.cpp kscreenlocker-5.12.2/greeter/authenticator.cpp
+--- kscreenlocker-5.12.2.orig/greeter/authenticator.cpp	2018-04-19 13:40:28.129537441 +0700
++++ kscreenlocker-5.12.2/greeter/authenticator.cpp	2018-04-19 13:40:50.281506142 +0700
+@@ -45,7 +45,7 @@
+     , m_checkPass(nullptr)
+ {
+     m_graceLockTimer->setSingleShot(true);
+-    m_graceLockTimer->setInterval(3000);
++    m_graceLockTimer->setInterval(300);
+     connect(m_graceLockTimer, &QTimer::timeout, this, &Authenticator::graceLockedChanged);
+ 
+     if (mode == AuthenticationMode::Delayed) {

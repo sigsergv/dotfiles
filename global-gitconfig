@@ -19,6 +19,7 @@
 	precomposeunicode = true
 	; always jump to first line
 	editor = vim +1
+	autocrlf = false
 
 [user]
 	name = Sergey Stolyarov
