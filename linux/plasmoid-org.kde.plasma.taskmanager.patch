@@ -1,14 +1,6 @@
-diff -uNr orig/usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/code/tools.js patched/usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/code/tools.js
---- orig/usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/code/tools.js	2017-02-21 00:00:00.000000000 +0700
-+++ patched/usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/code/tools.js	2017-10-12 14:00:46.674430767 +0700
-@@ -110,8 +110,8 @@
-         if (model.IsMinimized === true) {
-             tasksModel.requestToggleMinimized(index);
-             tasksModel.requestActivate(index);
--        } else if (model.IsActive === true) {
--            tasksModel.requestToggleMinimized(index);
-+//        } else if (model.IsActive === true) {
-+//            tasksModel.requestToggleMinimized(index);
-         } else {
-             tasksModel.requestActivate(index);
-         }
+113,114c113,114
+<         } else if (model.IsActive === true) {
+<             tasksModel.requestToggleMinimized(index);
+---
+> //        } else if (model.IsActive === true) {
+> //            tasksModel.requestToggleMinimized(index);
