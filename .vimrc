@@ -201,6 +201,9 @@ vnoremap c "_c
 nnoremap C "_C
 vnoremap C "_C
 
+" disable folding
+set nofoldenable
+
 " hack for gnu screen
 if match($TERM, "screen")!=-1
   set term=xterm
