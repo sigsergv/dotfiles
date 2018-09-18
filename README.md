@@ -21,6 +21,9 @@ Linux environment
     ln -s `pwd`/mplayer/config ~/.mplayer/
     ln -s `pwd`/mplayer/input.conf ~/.mplayer/
     cp `pwd`/gimp-ps-menurc ~/.gimp-2.8/menurc
+    mkdir -p ~/.config/Code/User
+    ln -s `pwd`/vscode/keybindings-linux.json ~/.config/Code/User/keybindings.json
+    ln -s `pwd`/vscode/settings.json ~/.config/Code/User
 
 Mac OS X environment
 ====================
