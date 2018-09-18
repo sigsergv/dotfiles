@@ -5,5 +5,5 @@
     "editor.fontSize": 12,
     "editor.multiCursorModifier": "ctrlCmd",
     // Insert spaces when pressing `Tab`. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
-    "editor.insertSpaces": false
+    "editor.insertSpaces": true
 }
