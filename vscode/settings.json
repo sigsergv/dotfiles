@@ -1,4 +1,9 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "workbench.colorTheme": "Default Light+"
+    "workbench.colorTheme": "Default Light+",
+    "editor.fontFamily": "Liberation Mono",
+    "editor.fontSize": 12,
+    "editor.multiCursorModifier": "ctrlCmd",
+    // Insert spaces when pressing `Tab`. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
+    "editor.insertSpaces": false
 }
