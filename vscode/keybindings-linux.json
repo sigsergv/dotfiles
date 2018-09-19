@@ -66,5 +66,17 @@
         "key": "alt+down",
         "command": "-editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-editor.action.startFindReplaceAction"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.action.findInFiles"
     }
 ]

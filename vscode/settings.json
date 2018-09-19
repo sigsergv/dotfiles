@@ -1,9 +1,20 @@
 // Place your settings in this file to overwrite the default settings
 {
     "workbench.colorTheme": "Default Light+",
+    "workbench.editor.tabCloseButton": "off",
     "editor.fontFamily": "Liberation Mono",
     "editor.fontSize": 12,
     "editor.multiCursorModifier": "ctrlCmd",
     // Insert spaces when pressing `Tab`. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+
+    // Controls whether auto detection of Jake tasks is on or off. Default is on.
+    "jake.autoDetect": "off",
+
+    // Controls whether auto detection of Gulp tasks is on or off. Default is on.
+    "gulp.autoDetect": "off",
+
+    // Controls whether auto detection of Grunt tasks is on or off. Default is on.
+    "grunt.autoDetect": "off",
+    "workbench.statusBar.feedback.visible": false
 }
