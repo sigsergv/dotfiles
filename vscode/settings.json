@@ -16,5 +16,15 @@
 
     // Controls whether auto detection of Grunt tasks is on or off. Default is on.
     "grunt.autoDetect": "off",
-    "workbench.statusBar.feedback.visible": false
+    "workbench.statusBar.feedback.visible": false,
+
+    // Controls whether the search will be shown as a view in the sidebar or as a panel in the panel area for more horizontal space.
+    //"search.location": "panel",
+
+    // Controls how lines should wrap.
+    //  - off: Lines will never wrap.
+    //  - on: Lines will wrap at the viewport width.
+    //  - wordWrapColumn: Lines will wrap at `editor.wordWrapColumn`.
+    //  - bounded: Lines will wrap at the minimum of viewport and `editor.wordWrapColumn`.
+    "editor.wordWrap": "on",   
 }

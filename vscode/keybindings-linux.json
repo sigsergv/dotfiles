@@ -78,5 +78,13 @@
     {
         "key": "ctrl+shift+f",
         "command": "-workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
     }
 ]
