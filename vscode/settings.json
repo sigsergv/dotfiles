@@ -27,4 +27,8 @@
     //  - wordWrapColumn: Lines will wrap at `editor.wordWrapColumn`.
     //  - bounded: Lines will wrap at the minimum of viewport and `editor.wordWrapColumn`.
     "editor.wordWrap": "on",   
+
+  // Controls whether opened editors from Quick Open show as preview. Preview editors are reused until they are kept (e.g. via double click or editing).
+  "workbench.editor.enablePreviewFromQuickOpen": false
+
 }
