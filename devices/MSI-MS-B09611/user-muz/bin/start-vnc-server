@@ -1,5 +1,5 @@
 #!/bin/sh
 
 # add -noxrecord to stop menu crashes
-/usr/bin/x11vnc -repeat -forever -shared -display :0 -passwdfile /home/muz/.vncpasswd -oa /home/muz/.x11vnc.log -noxrecord
+/usr/bin/x11vnc -repeat -forever -shared -display :0 -passwdfile /home/muz/.vncpasswd -oa /home/muz/.x11vnc.log -noxrecord -nomodtweak
 
