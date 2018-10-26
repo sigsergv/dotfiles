@@ -58,5 +58,9 @@
       }
     },
 
-    "editor.parameterHints.enabled": false
+    // Enables a pop-up that shows parameter documentation and type information as you type.
+    "editor.parameterHints.enabled": false,
+
+    // Controls whether the hover is shown.
+    "editor.hover.enabled": false
 }
