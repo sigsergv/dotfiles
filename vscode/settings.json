@@ -61,6 +61,15 @@
     // Enables a pop-up that shows parameter documentation and type information as you type.
     "editor.parameterHints.enabled": false,
 
+    // Controls the delay in milliseconds after which the hover is shown.
+    "editor.hover.delay": 1500,
+
     // Controls whether the hover is shown.
-    "editor.hover.enabled": false
+    "editor.hover.enabled": true,
+
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.rendererType": "canvas",
+    "[erlang]": {
+        
+    }
 }
