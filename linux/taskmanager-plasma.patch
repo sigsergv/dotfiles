@@ -1,0 +1,13 @@
+--- /usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/ui/code/tools.js.orig	2018-12-03 16:08:18.872339862 +0700
++++ /usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/ui/code/tools.js	2018-12-03 16:08:28.920450095 +0700
+@@ -110,8 +110,8 @@
+         if (model.IsMinimized === true) {
+             tasksModel.requestToggleMinimized(index);
+             tasksModel.requestActivate(index);
+-        } else if (model.IsActive === true) {
+-            tasksModel.requestToggleMinimized(index);
++//        } else if (model.IsActive === true) {
++//            tasksModel.requestToggleMinimized(index);
+         } else {
+             tasksModel.requestActivate(index);
+         }

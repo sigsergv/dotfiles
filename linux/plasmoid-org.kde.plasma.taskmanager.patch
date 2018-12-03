@@ -1,6 +1,0 @@
-113,114c113,114
-<         } else if (model.IsActive === true) {
-<             tasksModel.requestToggleMinimized(index);
----
-> //        } else if (model.IsActive === true) {
-> //            tasksModel.requestToggleMinimized(index);
