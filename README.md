@@ -11,12 +11,13 @@ Linux environment
 =================
 
     ln -s `pwd`/.Xresources ~/.Xresources
-    ln -s `pwd`/.fonts.conf ~/.config/fontconfig/fonts.conf
+    ln -s `pwd`/linux/fonts.conf ~/.config/fontconfig/fonts.conf
     ln -s `pwd`/.gtkrc-2.0.mine ~/
     ln -s `pwd`/.sqliterc ~/
     ln -s `pwd`/.mailcap ~/
     ln -s `pwd`/.zshenv .zshrc ~/ && touch ~/.zshenv_local ~/.zshrc_local
     ln -s `pwd`/XCompose-ru ~/.XCompose
+	ln -s `pwd`/.tmux.conf ~/
     mkdir -p ~/.mplayer
     ln -s `pwd`/mplayer/config ~/.mplayer/
     ln -s `pwd`/mplayer/input.conf ~/.mplayer/
