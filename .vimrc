@@ -210,4 +210,7 @@ if match($TERM, "screen")!=-1
   set lines-=1
 endif
 
+" set Visual selection colors
+hi Visual ctermbg=74 ctermfg=7
+
 execute pathogen#infect()
