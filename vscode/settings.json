@@ -65,6 +65,8 @@
         
     },
 
+    "editor.renderWhitespace": "boundary",
+
   // turn off tasks autodetection
     // Controls whether auto detection of Jake tasks is on or off. Default is on.
     "typescript.tsc.autoDetect": "off",
