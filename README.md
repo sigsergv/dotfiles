@@ -13,6 +13,8 @@ Linux environment
     ln -s `pwd`/.Xresources ~/.Xresources
     ln -s `pwd`/linux/fonts.conf ~/.config/fontconfig/fonts.conf
     ln -s `pwd`/.gtkrc-2.0.mine ~/
+    mkdir -p ~/.config/gtk-3.0
+    ln -s `pwd`/linux/gtk_3.0.css ~/.config/gtk-3.0/gtk.css
     ln -s `pwd`/.sqliterc ~/
     ln -s `pwd`/.mailcap ~/
     ln -s `pwd`/.zshenv .zshrc ~/ && touch ~/.zshenv_local ~/.zshrc_local

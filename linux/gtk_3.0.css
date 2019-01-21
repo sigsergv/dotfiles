@@ -1,0 +1,12 @@
+/* some gtk window decoration tweaks */
+/* copy/symlink this file to ~/.config/gtk-3.0/gtk.css */
+
+decoration {
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: green;
+}
+
+.titlebar {
+	border-radius: 0;
+}
