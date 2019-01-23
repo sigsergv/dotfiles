@@ -5,6 +5,10 @@
     "editor.fontFamily": "Liberation Mono",
     "editor.fontSize": 12,
     "editor.multiCursorModifier": "ctrlCmd",
+
+
+    "editor.detectIndentation": true,
+
     // Insert spaces when pressing `Tab`. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
     "editor.insertSpaces": true,
 
@@ -63,6 +67,10 @@
     "terminal.integrated.rendererType": "canvas",
     "[erlang]": {
         
+    },
+
+    "[javascript]": {
+      "editor.detectIndentation": true
     },
 
     "editor.renderWhitespace": "boundary",
