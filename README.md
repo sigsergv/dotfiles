@@ -17,9 +17,9 @@ Linux environment
     ln -s `pwd`/linux/gtk_3.0.css ~/.config/gtk-3.0/gtk.css
     ln -s `pwd`/.sqliterc ~/
     ln -s `pwd`/.mailcap ~/
-    ln -s `pwd`/.zshenv .zshrc ~/ && touch ~/.zshenv_local ~/.zshrc_local
+    ln -s `pwd`/.zshenv `pwd`/.zshrc ~/ && touch ~/.zshenv_local ~/.zshrc_local
     ln -s `pwd`/XCompose-ru ~/.XCompose
-	ln -s `pwd`/.tmux.conf ~/
+    ln -s `pwd`/.tmux.conf ~/
     mkdir -p ~/.mplayer
     ln -s `pwd`/mplayer/config ~/.mplayer/
     ln -s `pwd`/mplayer/input.conf ~/.mplayer/
