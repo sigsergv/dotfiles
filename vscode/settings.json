@@ -81,5 +81,6 @@
     "jake.autoDetect": "off",
     "grunt.autoDetect": "off",
     "gulp.autoDetect": "off",
-    "npm.autoDetect": "off"
+    "npm.autoDetect": "off",
+    "extensions.ignoreRecommendations": true
 }
