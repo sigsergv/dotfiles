@@ -66,11 +66,12 @@
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.rendererType": "canvas",
     "[erlang]": {
-        
+      "editor.detectIndentation": true
     },
 
     "[javascript]": {
-      "editor.detectIndentation": true
+      "editor.detectIndentation": true,
+      "editor.tabSize": 4
     },
 
     "editor.renderWhitespace": "boundary",
@@ -82,5 +83,9 @@
     "grunt.autoDetect": "off",
     "gulp.autoDetect": "off",
     "npm.autoDetect": "off",
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "window.zoomLevel": 0,
+    "window.titleBarStyle": "custom",
+
+    "editor.tabSize": 4
 }
