@@ -136,5 +136,14 @@
         "key": "alt+down",
         "command": "editor.action.transformToLowercase",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.view.search",
+        "when": "!searchViewletVisible"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "editor.action.startFindReplaceAction"
     }
 ]
