@@ -1,0 +1,65 @@
+// eclipse-like key bindings, for sublime text v.3 (macos)
+// author: Sergey Stolyarov <sergei@regolit.com>
+[
+    // disable some hotkeys
+    { "keys": ["ctrl+f3"], "command": "unbound" },
+    { "keys": ["ctrl+shift+f3"], "command": "unbound" },
+    { "keys": ["ctrl+g"], "command": "unbound" },
+    { "keys": ["ctrl+q"], "command": "unbound" },
+
+    // find selected text
+    { "keys": ["super+k"], "command": "find_under" },
+    { "keys": ["super+shift+k"], "command": "find_under_prev" },
+
+    // delete word before cursor
+    { "keys": ["super+w"], "command": "delete_word", "args": { "forward": false } },
+
+    // delete line (default ctrl+shift+k)
+    { "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+    // auto completion
+    { "keys": ["super+p"], "command": "auto_complete" },
+
+    // open files list overlay
+    { "keys": ["ctrl+3"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
+    // add line
+    { "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} },
+
+    { "keys": ["ctrl+shift+p"], "command": "move_to", "args": {"to": "brackets"} },
+    { "keys": ["super+shift+p"], "command": "move_to", "args": {"to": "brackets"} },
+
+    // jump to line
+    { "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+    { "keys": ["ctrl+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+
+    // use Ctrl+H for searching in files
+    { "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    { "keys": ["super+h"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    { "keys": ["ctrl+shift+f"], "command": "unbound" },
+    { "keys": ["super+shift+f"], "command": "unbound" },
+
+    // use Ctrl+F both for searching and replacing
+    { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "replace"} },
+    { "keys": ["super+f"], "command": "show_panel", "args": {"panel": "replace"} },
+
+    // expand selection to complete line
+    { "keys": ["super+shift+l"], "command": "expand_selection", "args": {"to": "line"} },
+    { "keys": ["ctrl+shift+l"], "command": "expand_selection", "args": {"to": "line"} },
+
+    // case convertions
+    { "keys": ["alt+up"], "command": "upper_case" },
+    { "keys": ["alt+down"], "command": "lower_case" },
+
+    // close all opened tabs
+    {"keys": ["shift+ctrl+w"], "command": "close_all"},
+
+    // open methods lookup
+    { "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+
+    { "keys": ["f3"], "command": "find_next" },
+
+    // use ctrl+w to wrap selection with tag <p>
+    {"keys": ["ctrl+w"], "command": "insert_snippet", 
+        "args": { "name": "Packages/XML/Snippets/long-tag.sublime-snippet" }}
+]
