@@ -37,7 +37,7 @@
     },
     {
         "key": "ctrl+b",
-        "command": "workbench.action.tasks.runTask"
+        "command": "workbench.action.tasks.reRunTask"
     },
     {
         "key": "ctrl+3",
