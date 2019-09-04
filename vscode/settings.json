@@ -66,11 +66,6 @@
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.rendererType": "canvas",
 
-    "[erlang]": {
-      "editor.detectIndentation": true,
-      "editor.tabSize": 4
-    },
-
     "[javascript]": {
       "editor.detectIndentation": true,
       "editor.tabSize": 4
@@ -89,5 +84,6 @@
     "window.zoomLevel": 0,
     "window.titleBarStyle": "custom",
 
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "erlang.autoIndent": false
 }

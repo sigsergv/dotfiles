@@ -145,5 +145,89 @@
     {
         "key": "ctrl+shift+f",
         "command": "editor.action.startFindReplaceAction"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-extension.rebarBuild",
+        "when": "editorLangId == 'erlang'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-extension.rebarBuild",
+        "when": "editorLangId == 'erlang'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-extension.rebarBuild",
+        "when": "editorLangId == 'erlang'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-extension.rebarBuild",
+        "when": "editorLangId == 'erlang'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-extension.rebarBuild",
+        "when": "editorLangId == 'erlang'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-extension.rebarBuild",
+        "when": "editorLangId == 'erlang'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-extension.rebarBuild",
+        "when": "editorLangId == 'erlang'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-extension.rebarBuild",
+        "when": "editorLangId == 'erlang'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-extension.rebarBuild",
+        "when": "editorLangId == 'erlang'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-extension.rebarBuild",
+        "when": "editorLangId == 'erlang'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-extension.rebarBuild",
+        "when": "editorLangId == 'erlang'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-extension.rebarBuild",
+        "when": "editorLangId == 'erlang'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.tasks.runTask"
     }
 ]
