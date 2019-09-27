@@ -85,5 +85,6 @@
     "window.titleBarStyle": "custom",
 
     "editor.tabSize": 4,
-    "erlang.autoIndent": false
+    "erlang.autoIndent": false,
+    "erlang.linter-erlc.executablePath": "/opt/entensys/otp/bin/erlc"
 }
