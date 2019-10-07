@@ -86,5 +86,6 @@
 
     "editor.tabSize": 4,
     "erlang.autoIndent": false,
-    "erlang.linter-erlc.executablePath": "/opt/entensys/otp/bin/erlc"
+    "erlang.linter-erlc.executablePath": "/opt/entensys/otp/bin/erlc",
+    "javascript.format.enable": false
 }
