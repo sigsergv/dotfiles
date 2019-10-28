@@ -68,7 +68,9 @@
 
     "[javascript]": {
       "editor.detectIndentation": true,
-      "editor.tabSize": 4
+      "editor.tabSize": 4,
+      "editor.autoIndent": false,
+      "editor.formatOnPaste": false
     },
 
     "editor.renderWhitespace": "boundary",

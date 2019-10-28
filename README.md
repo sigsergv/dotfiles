@@ -58,3 +58,10 @@ Fixes and improvements for linux/kde
 
     cp intel-kde-fixes.sh freetype2-fix.sh $HOME/.config/plasma-workspace/env/
     chmod +x $HOME/.config/plasma-workspace/env/*.sh
+
+
+Bootstrap linux environment
+---------------------------
+
+Use script `bootstrap-linux-env` to setup linux (debian/ubuntu-only, actually) environment. It downloads all required scripts and packages
+and then installs them.
