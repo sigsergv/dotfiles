@@ -23,7 +23,7 @@ export PATH=/usr/bin:/usr/games:/bin:~/bin
 #export TERM=xterm
 
 export DEBFULLNAME="Sergey Stolyarov"
-export DEBEMAIL="sergei.stolyarov@regolit.com"
+export DEBEMAIL="sergei@regolit.com"
 export WORDCHARS='*?_-.[]~=;!#$%^(){}<>'
 #export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dawt.useSystemAAFontSettings=lcd' 
 
