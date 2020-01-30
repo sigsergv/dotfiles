@@ -1,7 +1,8 @@
 Overview
 ========
 
-This bindings file adds a few text manipulation hotkeys that are not available by default:
+This bindings file adds a few text manipulation hotkeys that are not available by default (they have been
+added a few years ago actually):
 
 * ^u - kills text to the beginning of paragraph
 * ^k - kills text to the end of paragraph
