@@ -24,7 +24,8 @@ Open this directory in terminal and type:
 
 Or you can copy this line into the terminal and press ENTER:
 
-    curl 'https://raw.githubusercontent.com/sigsergv/dotfiles/master/mac/russian-shortcuts/dist-install.sh' -o /tmp/k-dist-install.sh && bash /tmp/k-dist-install.sh
+    curl 'https://raw.githubusercontent.com/sigsergv/dotfiles/master/mac/russian-shortcuts/dist-install.sh'\
+		-o /tmp/k-dist-install.sh && bash /tmp/k-dist-install.sh
 
 
 Some information
