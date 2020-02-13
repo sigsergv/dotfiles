@@ -229,5 +229,40 @@
     {
         "key": "ctrl+shift+b",
         "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "shift+insert",
+        "command": "-editor.action.selectionClipboardPaste",
+        "when": "config.editor.selectionClipboard && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+insert",
+        "command": "-editor.action.selectionClipboardPaste",
+        "when": "config.editor.selectionClipboard && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+insert",
+        "command": "-editor.action.selectionClipboardPaste",
+        "when": "config.editor.selectionClipboard && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+insert",
+        "command": "editor.action.selectionClipboardPaste",
+        "when": "false"
+    },
+    {
+        "key": "shift+insert",
+        "command": "-editor.action.selectionClipboardPaste",
+        "when": "config.editor.selectionClipboard && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+delete",
+        "command": "editor.action.selectionClipboardPaste",
+        "when": "config.editor.selectionClipboard && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "",
+        "command": "-editor.action.selectionClipboardPaste",
+        "when": "config.editor.selectionClipboard && editorTextFocus && !editorReadonly"
     }
 ]
