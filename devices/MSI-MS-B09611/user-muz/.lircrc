@@ -1,7 +1,8 @@
 begin
   prog = irexec
   button = play-pause
-  config = xte 'key XF86AudioPlay'
+  config = /home/muz/bin/play-pause
+#  config = xte 'key XF86AudioPlay'
 end
 
 begin

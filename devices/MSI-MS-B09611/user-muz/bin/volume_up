@@ -5,4 +5,4 @@
 #echo $SINK
 #pactl set-sink-mute $SINK false
 #pactl set-sink-volume $SINK +3%
-amixer -c 1 sset ExternalSC 2%+
+amixer -c 1 sset ExternalSC 2+

@@ -1,0 +1,31 @@
+#!/bin/bash
+
+## Smart play-pause, for currently focused player only.
+
+focused_pid=$(/usr/bin/xdotool getwindowfocus getwindowpid)
+focused_cmd=$(ps -p $focused_pid -o args)
+
+case $focused_cmd in
+	*spotify* )
+	target_player=spotify
+	;;
+
+	*"Google Play Music Desktop Player"* )
+	target_player=google_play_music_desktop_player
+	;;
+
+	*/usr/bin/clementine* )
+	target_player=clementine
+	;;
+
+	* )
+	echo $focused_cmd
+	target_player=unknown
+	;;
+esac
+
+if [$focused_cmd=unknown] ; then
+	playerctl play-pause
+else
+	playerctl -p $target_player play-pause
+fi
