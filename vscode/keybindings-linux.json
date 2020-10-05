@@ -148,102 +148,16 @@
     },
     {
         "key": "ctrl+shift+b",
-        "command": "-workbench.action.tasks.build"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-extension.rebarBuild",
-        "when": "editorLangId == 'erlang'"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-extension.rebarBuild",
-        "when": "editorLangId == 'erlang'"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-extension.rebarBuild",
-        "when": "editorLangId == 'erlang'"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-extension.rebarBuild",
-        "when": "editorLangId == 'erlang'"
-    },
-    {
-        "key": "ctrl+shift+b",
         "command": "-extension.rebarBuild",
         "when": "editorLangId == 'erlang'"
     },
     {
         "key": "ctrl+shift+b",
         "command": "-workbench.action.tasks.build"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-workbench.action.tasks.build"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-workbench.action.tasks.build"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-workbench.action.tasks.build"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-extension.rebarBuild",
-        "when": "editorLangId == 'erlang'"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-extension.rebarBuild",
-        "when": "editorLangId == 'erlang'"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-extension.rebarBuild",
-        "when": "editorLangId == 'erlang'"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-extension.rebarBuild",
-        "when": "editorLangId == 'erlang'"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-extension.rebarBuild",
-        "when": "editorLangId == 'erlang'"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-extension.rebarBuild",
-        "when": "editorLangId == 'erlang'"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-extension.rebarBuild",
-        "when": "editorLangId == 'erlang'"
     },
     {
         "key": "ctrl+shift+b",
         "command": "workbench.action.tasks.runTask"
-    },
-    {
-        "key": "shift+insert",
-        "command": "-editor.action.selectionClipboardPaste",
-        "when": "config.editor.selectionClipboard && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+insert",
-        "command": "-editor.action.selectionClipboardPaste",
-        "when": "config.editor.selectionClipboard && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+insert",
-        "command": "-editor.action.selectionClipboardPaste",
-        "when": "config.editor.selectionClipboard && editorTextFocus && !editorReadonly"
     },
     {
         "key": "shift+insert",
@@ -258,11 +172,6 @@
     {
         "key": "ctrl+shift+delete",
         "command": "editor.action.selectionClipboardPaste",
-        "when": "config.editor.selectionClipboard && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "",
-        "command": "-editor.action.selectionClipboardPaste",
         "when": "config.editor.selectionClipboard && editorTextFocus && !editorReadonly"
     }
 ]

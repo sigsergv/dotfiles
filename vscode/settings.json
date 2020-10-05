@@ -2,7 +2,7 @@
 {
     "workbench.colorTheme": "Default Light+",
     "workbench.editor.tabCloseButton": "off",
-    "editor.fontFamily": "Liberation Mono",
+    "editor.fontFamily": "JetBrains Mono NL",
     "editor.fontSize": 12,
     "editor.multiCursorModifier": "ctrlCmd",
 
