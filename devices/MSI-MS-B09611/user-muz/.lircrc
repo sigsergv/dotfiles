@@ -7,8 +7,8 @@ end
 
 begin
   prog = irexec
-  button = knobMute
-  config = xte 'key XF86AudioPlay'
+  button = knobmute
+  config = /home/muz/bin/play-pause
 end
 
 begin

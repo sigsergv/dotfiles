@@ -18,6 +18,10 @@ case $focused_cmd in
 	target_player=clementine
 	;;
 
+	*"youtube-music-desktop-app"* )
+	target_player=youtubemusic
+	;;
+
 	* )
 	echo $focused_cmd
 	target_player=unknown
