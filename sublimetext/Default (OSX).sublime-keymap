@@ -58,6 +58,7 @@
     { "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
 
     { "keys": ["f3"], "command": "find_next" },
+    { "keys": ["shift+f3"], "command": "find_prev" },
 
     // use ctrl+w to wrap selection with tag <p>
     {"keys": ["ctrl+w"], "command": "insert_snippet", 
