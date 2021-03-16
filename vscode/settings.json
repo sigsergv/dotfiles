@@ -95,5 +95,13 @@
     "erlang.linter-erlc.executablePath": "/opt/entensys/otp/bin/erlc",
     "javascript.format.enable": false,
     "python.showStartPage": false,
-    "gitlens.codeLens.enabled": false
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.pullRequests.enabled": false,
+    "gitlens.menus": false,
+    "workbench.editorAssociations": [
+      {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+      }
+    ]
 }
