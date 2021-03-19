@@ -2,13 +2,13 @@ Soft to use
 ===========
 
 
-* MiddleClick
-* Karabiner elements (swap fn and ctrl)
-* HyperDock
-* DefaultApps
+* MiddleClick - emulate middle click by tapping three fingers
+* Karabiner elements - swap fn and ctrl buttons
+* Hammerspoon - required by karabiner
+* HyperDock - window preview, move windows while holding key, some dock tweaks
+* SwiftDefaultApps - change file associations via settings applet https://github.com/Lord-Kamina/SwiftDefaultApps
 * GPG Suite
-* Hammerspoon
 * MagicPrefs (?)
-* VLC
-* skim
+* VLC - 
+* skim - PDF viewer
 
