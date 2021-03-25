@@ -11,6 +11,7 @@
 «Убранный» текст на самом деле записывает в специальный отдельный буфер, из которого его можно вставить
 сочетанием ^y.
 
+Более подробно обо всём этом у меня написано в статье в блоге: <https://blog.regolit.com/2021/03/24/macos-keyboard-shortcuts-and-russian-input-method>.
 
 Как установить
 ==============
@@ -28,17 +29,18 @@
 Some information
 ================
 
-See file /System/Library/Frameworks/AppKit.framework/Versions/C/Headers/NSEvent.h for
-constants that corresponds to keys. For example, 0xF702 (or \uf702 in json notation)
-corresponds to NSLeftArrowFunctionKey constant, i.e. Left Arrow key on the keyboard.
+See file /System/Library/Frameworks/AppKit.framework/Versions/C/Headers/NSEvent.h from MacOSX SDK for constants that
+correspond to keys. For example, 0xF702 (or \uf702 in json notation) corresponds to NSLeftArrowFunctionKey constant,
+i.e. Left Arrow key on the keyboard. If you don't have SDK installed you can find this file on github: 
+<https://github.com/phracker/MacOSX-SDKs/blob/master/MacOSX11.1.sdk/System/Library/Frameworks/AppKit.framework/Versions/C/Headers/NSEvent.h>
 
 See also https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html
 
-Some special character meanings:
+The following characters are used to denote modifier keys:
 
-    $ - SHIFT
-    ~ - OPTION
+    $ - Shift / ⇧
+    ~ - Option / ⌥
     ^ - Control
-    # - numeric keypad
-    @ - Cmd
+    # - key on numeric keypad
+    @ - Command / ⌘
 
