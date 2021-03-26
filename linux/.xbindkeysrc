@@ -1,7 +1,8 @@
 # Meta+C - player play-pause
 #"xdotool sleep 0.2 key --clearmodifiers XF86AudioPlay; dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
 #"xte 'keydown Super_L' 'key XF86AudioPlay'; dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
-"xdotool keyup Super_L keyup c key --clearmodifiers XF86AudioPlay keydown Super_L key Control; dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+#"xdotool keyup Super_L keyup c key --clearmodifiers XF86AudioPlay keydown Super_L key Control; dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+"xdotool keyup Super_L keyup c key --clearmodifiers XF86AudioPlay keydown Super_L key Control"
 	Mod4 + c
 
 #"xte 'keydown Super_L' 'key h' 'keyup Super_L'"
