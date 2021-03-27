@@ -29,5 +29,7 @@
     "^u": "deleteToBeginningOfParagraph:",
     "^г": "deleteToBeginningOfParagraph:",
     "^k": "deleteToEndOfParagraph:",
-    "^л": "deleteToEndOfParagraph:"
+    "^л": "deleteToEndOfParagraph:",
+    "^w": "deleteWordBackward:",
+    "^ц": "deleteWordBackward:"
 }
