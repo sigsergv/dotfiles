@@ -44,3 +44,4 @@ The following characters are used to denote modifier keys:
     # - key on numeric keypad
     @ - Command / ⌘
 
+Complete list of available commands/actions: <https://developer.apple.com/documentation/appkit/nsstandardkeybindingresponding>.
