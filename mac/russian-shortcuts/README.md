@@ -45,3 +45,5 @@ The following characters are used to denote modifier keys:
     @ - Command / ⌘
 
 Complete list of available commands/actions: <https://developer.apple.com/documentation/appkit/nsstandardkeybindingresponding>.
+
+A bit outdated list of key bindings: <https://www.hcs.harvard.edu/~jrus/site/system-bindings.html>.
