@@ -103,5 +103,9 @@
         "viewType": "jupyter.notebook.ipynb",
         "filenamePattern": "*.ipynb"
       }
-    ]
+    ],
+    "outline.problems.enabled": false,
+
+    // Show Errors & Warnings on files and folder.
+    "problems.decorations.enabled": false
 }
