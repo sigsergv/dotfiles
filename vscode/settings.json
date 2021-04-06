@@ -105,7 +105,6 @@
       }
     ],
     "outline.problems.enabled": false,
-
-    // Show Errors & Warnings on files and folder.
-    "problems.decorations.enabled": false
+    "outline.problems.badges": false,
+    "workbench.editor.decorations.badges": false
 }
