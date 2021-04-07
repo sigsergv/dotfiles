@@ -106,5 +106,7 @@
     ],
     "outline.problems.enabled": false,
     "outline.problems.badges": false,
-    "workbench.editor.decorations.badges": false
+    "workbench.editor.decorations.badges": false,
+    "outline.problems.colors": false,
+    "problems.decorations.enabled": false
 }
