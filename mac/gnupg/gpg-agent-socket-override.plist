@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>link-ssh-auth-sock</string>
+	<string>gpg-agent-socket-override</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/bin/sh</string>
