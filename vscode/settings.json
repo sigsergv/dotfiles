@@ -87,7 +87,6 @@
     "gulp.autoDetect": "off",
     "npm.autoDetect": "off",
     "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": 0,
     "window.titleBarStyle": "custom",
 
     "editor.tabSize": 4,
