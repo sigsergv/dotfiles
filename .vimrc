@@ -213,4 +213,11 @@ endif
 " set Visual selection colors
 hi Visual ctermbg=74 ctermfg=7
 
+" fix mouse behaviour on wide terminals
+if has("mouse_sgr")
+    set ttymouse=sgr
+else
+    set ttymouse=xterm2
+end
+
 execute pathogen#infect()
