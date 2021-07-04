@@ -1,0 +1,31 @@
+#!/bin/bash
+
+APP_DIR=$(ls /Applications | grep -i gimp-)
+FULL_APP_DIR="/Applications/$APP_DIR"
+CONF_FILE="${FULL_APP_DIR}/Contents/Resources/etc/fonts/fonts.conf"
+TARGET_DIR=~/Library/GimpFonts
+SRC1=/Library/Fonts
+SRC2=/System/Library/Fonts
+
+sed -i -E 's!<dir>/System/Library/Fonts</dir> !<\!--<dir>/System/Library/Fonts</dir>--> !' "$CONF_FILE"
+sed -i -E 's! <dir>/Library/Fonts</dir>! <\!--<dir>/Library/Fonts</dir>-->!' "$CONF_FILE"
+sed -i -E 's! <dir>~/Library/Fonts</dir>! <\!--<dir>~/Library/Fonts</dir>-->!' "$CONF_FILE"
+sed -i -E 's!	<dir>/usr/share/fonts</dir>!	<dir>~/Library/GimpFonts</dir> <dir>/usr/share/fonts</dir>!' "$CONF_FILE"
+echo $CONF_FILE
+
+mkdir -p ~/Library/GimpFonts
+
+while IFS= read -r fn; do
+	target="${TARGET_DIR}/${fn}"
+	if [ ! -e "$target" ]; then
+		if [ -f "${SRC1}/${fn}" ]; then
+			ln -s "${SRC1}/$fn" "$target"
+		elif [ -f "${SRC2}/${fn}" ]; then
+			ln -s "${SRC2}/$fn" "$target"
+		else
+			echo "Font ${fn} not found in system directories."
+		fi
+	fi
+done < "fonts-list.txt"
+
+
