@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export FONTCONFIG_PATH=$HOME/.config/telegram-fontconfig
+
+~/.TelegramDesktop/Telegram $@

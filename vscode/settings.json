@@ -97,12 +97,9 @@
     "gitlens.codeLens.enabled": false,
     "gitlens.statusBar.pullRequests.enabled": false,
     "gitlens.menus": false,
-    "workbench.editorAssociations": [
-      {
-        "viewType": "jupyter.notebook.ipynb",
-        "filenamePattern": "*.ipynb"
-      }
-    ],
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "outline.problems.enabled": false,
     "outline.problems.badges": false,
     "workbench.editor.decorations.badges": false,
