@@ -7,4 +7,10 @@ Control=
 Meta=
 Shift=
 
+It uses DBUS command, you can use graphical tool `qdbusviewer` or cli `qdbus`.
 
+Alternatively you can use this command:
+
+kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ''
+
+After that restart kwin: `kwin --replace`
