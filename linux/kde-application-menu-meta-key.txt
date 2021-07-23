@@ -1,0 +1,10 @@
+To disable Win/Meta key, open file `~/.config/kwinrc` and edit (add if doesn't exist) this section:
+
+[ModifierOnlyShortcuts]
+Alt=
+Control=
+#Meta=org.kde.plasmashell,/PlasmaShell,org.kde.PlasmaShell,activateLauncherMenu
+Meta=
+Shift=
+
+
