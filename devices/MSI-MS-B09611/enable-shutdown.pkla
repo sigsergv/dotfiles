@@ -1,6 +1,6 @@
 [Allow all users to shutdown]
 Identity=unix-user:*
-Action=org.freedesktop.login1.stop-multiple-users
+Action=org.freedesktop.login1.power-off-multiple-sessions
 ResultInactive=yes
 ResultActive=yes
 ResultAny=yes
