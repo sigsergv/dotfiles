@@ -11,4 +11,5 @@ Soft to use
 * MagicPrefs (?)
 * VLC - 
 * skim - PDF viewer
+* image viewer: qView ( https://github.com/jurplel/qView )
 
