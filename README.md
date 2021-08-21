@@ -27,6 +27,8 @@ Linux environment
     mkdir -p ~/.config/Code/User
     ln -s `pwd`/vscode/keybindings-linux.json ~/.config/Code/User/keybindings.json
     ln -s `pwd`/vscode/settings.json ~/.config/Code/User
+	mkdir ~/.config/mc
+	rm -f ~/.config/mc/menu && ln -s `pwd`/mc/menu.linux ~/.config/mc/menu
 
 Mac OS X environment
 ====================
@@ -34,6 +36,8 @@ Mac OS X environment
     ln -s `pwd`/.slate ~/
     sh `pwd`/mac/defaults.sh
     cd `pwd`/mac/russian-shortcuts && make install
+    mkdir ~/.config/mc
+    rm -f ~/.config/mc/menu && ln -s `pwd`/mc/menu.mac ~/.config/mc/menu
     
 
 Both Linux and Mac OS X
