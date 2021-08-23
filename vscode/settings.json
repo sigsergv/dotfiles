@@ -98,11 +98,15 @@
     "gitlens.statusBar.pullRequests.enabled": false,
     "gitlens.menus": false,
     "workbench.editorAssociations": {
-      "*.ipynb": "jupyter.notebook.ipynb"
+      "*.ipynb": "jupyter-notebook"
     },
     "outline.problems.enabled": false,
     "outline.problems.badges": false,
     "workbench.editor.decorations.badges": false,
     "outline.problems.colors": false,
-    "problems.decorations.enabled": false
+    "problems.decorations.enabled": false,
+    "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "left"
+    }
 }
