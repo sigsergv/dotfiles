@@ -12,4 +12,5 @@ Soft to use
 * VLC - 
 * skim - PDF viewer
 * image viewer: qView ( https://github.com/jurplel/qView )
+* hide unnecessary icons from menu: dozer https://github.com/Mortennn/Dozer
 
