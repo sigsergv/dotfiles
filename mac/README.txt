@@ -2,7 +2,8 @@ Soft to use
 ===========
 
 
-* MiddleClick - emulate middle click by tapping three fingers
+* [old] MiddleClick - emulate middle click by tapping three fingers // https://rouge41.com/labs/
+** Middleclick fork / https://github.com/artginzburg/MiddleClick-BigSur (see notes)
 * Karabiner elements - swap fn and ctrl buttons
 * Hammerspoon - required by karabiner
 * HyperDock - window preview, move windows while holding key, some dock tweaks
@@ -14,3 +15,12 @@ Soft to use
 * image viewer: qView ( https://github.com/jurplel/qView )
 * hide unnecessary icons from menu: dozer https://github.com/Mortennn/Dozer
 
+
+Notes
+=====
+
+Middleclick
+-----------
+
+Add to Prefs -> Security & Privacy -> Privacy -> Accessebility
+Add to Prefs -> USers & Groups -> Login items
