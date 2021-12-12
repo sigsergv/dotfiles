@@ -22,6 +22,6 @@ download 'https://github.com/sigsergv/dotfiles/raw/master/.vimrc' ~/.vimrc
 
 # download and install more-shell-utils
 TMP=$(tempfile)
-download 'https://github.com/sigsergv/shell-utils/releases/download/1.7/more-shell-utils_1.7-1_all.deb' $TMP
+download 'https://github.com/sigsergv/shell-utils/releases/download/1.8/more-shell-utils_1.8-1_all.deb' $TMP
 sudo dpkg -i $TMP
 rm -f $TMP
