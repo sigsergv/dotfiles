@@ -2,12 +2,30 @@
 /* copy/symlink this file to ~/.config/gtk-3.0/gtk.css */
 
 decoration {
-	border: 1px solid black;
-	border-radius: 0;
-	background-color: green;
+        border: 1px solid #aeaeae;
+        border-radius: 0;
+        background-color: green;
 }
 
 .titlebar {
-	border-radius: 0;
+        border-radius: 0;
 }
+
+headerbar entry,
+headerbar spinbutton,
+headerbar button,
+headerbar separator {
+    margin-top: 0px; /* same as headerbar side padding for nicer proportions */
+    margin-bottom: 0px;
+}
+
+headerbar {
+    min-height: 20px;
+    padding-left: 2px; /* same as childrens vertical margins for nicer proportions */
+    padding-right: 2px;
+    margin: 0px; /* same as headerbar side padding for nicer proportions */
+    padding: 0px;
+}
+
 @import 'colors.css';
+
