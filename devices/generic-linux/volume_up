@@ -1,0 +1,5 @@
+#!/bin/bash
+
+SINK=$(pactl get-default-sink)
+
+pactl set-sink-volume $SINK +5%
