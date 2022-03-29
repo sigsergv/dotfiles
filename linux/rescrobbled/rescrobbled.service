@@ -1,0 +1,13 @@
+# downloaded from https://github.com/InputUsername/rescrobbled/raw/master/rescrobbled.service
+# copy it to ~/.config/systemd/user/
+[Unit]
+Description=An MPRIS scrobbler
+Documentation=https://github.com/InputUsername/rescrobbled
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=%h/dotfiles/linux/rescrobbled/rescrobbled-0.5.2
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,11 @@
+## keys are in secured storage
+lastfm-key = "---"
+lastfm-secret = "---"
+# enable-notifications = true
+min-play-time = 20
+# player-whitelist = []
+# filter-script = ""
+# 
+# [[listenbrainz]]
+# url = ""
+# token = ""
