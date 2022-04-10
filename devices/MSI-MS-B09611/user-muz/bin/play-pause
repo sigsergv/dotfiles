@@ -3,7 +3,7 @@
 ## Smart play-pause, for currently focused player only.
 
 focused_pid=$(/usr/bin/xdotool getwindowfocus getwindowpid)
-focused_cmd=$(ps -p $focused_pid -o args)
+focused_cmd=$(ps -p $focused_pid -o args | tail -n1)
 
 case $focused_cmd in
 	*spotify* )
@@ -28,7 +28,7 @@ case $focused_cmd in
 	;;
 esac
 
-if [$focused_cmd=unknown] ; then
+if [ $focused_cmd=unknown ] ; then
 	playerctl play-pause
 else
 	playerctl -p $target_player play-pause
