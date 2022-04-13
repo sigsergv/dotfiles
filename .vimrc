@@ -220,4 +220,8 @@ else
     set ttymouse=xterm2
 end
 
+" disable gitcommit autowrap
+au FileType gitcommit setlocal tw=0
+
+
 execute pathogen#infect()
