@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# disable colored output of ffmpeg
+export AV_LOG_FORCE_NOCOLOR=1
+
+if [ -z "$1" ]; then
+    echo "ERROR: Filename argument is required" >&2
+    exit 1
+fi
+
+if [ ! -f "$1" ]; then
+    echo "ERROR: File '${1}' doesn't exist" >&2
+    exit 1
+fi
+
+FILE_EXT="${1##*.}"
+T1=$(mktemp)
+TMPFILE="${T1}.${FILE_EXT}"
+mv "$T1" "$TMPFILE"
+
+echo $FILE_EXT
+
+function cleanup()
+{
+    rm -f $TMPFILE
+}
+
+trap cleanup EXIT
+
+echo "Removing audio track from media file '${1}' ..."
+if ffmpeg -hide_banner -y -i "$1" -c copy -an $TMPFILE; then
+    mv $TMPFILE "$1"
+    echo "done"
+# else
+#     echo "failed"
+fi
+
+# echo $TMPFILE

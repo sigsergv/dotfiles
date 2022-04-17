@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# disable colored output of ffmpeg
+export AV_LOG_FORCE_NOCOLOR=1
+
+ffprobe -hide_banner "${1}"
