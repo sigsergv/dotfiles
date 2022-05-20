@@ -34,3 +34,7 @@
 	rebase = true
 [init]
 	defaultBranch = master
+[diff]
+	renameLimit = 20000
+[url "https://"]
+	insteadOf = git://

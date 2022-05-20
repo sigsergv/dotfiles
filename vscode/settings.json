@@ -73,7 +73,7 @@
     "[javascript]": {
       "editor.detectIndentation": true,
       "editor.tabSize": 4,
-      "editor.autoIndent": false,
+      "editor.autoIndent": "advanced",
       "editor.formatOnPaste": false
     },
 
@@ -108,5 +108,6 @@
     "notebook.cellToolbarLocation": {
       "default": "right",
       "jupyter-notebook": "left"
-    }
+    },
+    "workbench.editor.untitled.hint": "hidden"
 }
