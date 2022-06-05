@@ -22,14 +22,18 @@ case $focused_cmd in
 	target_player=youtubemusic
 	;;
 
+	*/usr/bin/MellowPlayer* )
+	target_player=MellowPlayer3
+	;;
+
 	* )
-	echo $focused_cmd
+	#echo $focused_cmd
 	target_player=unknown
 	;;
 esac
 
-if [ $focused_cmd=unknown ] ; then
-	playerctl play-pause
+if [ "$focused_cmd" = "unknown" ] ; then
+	/usr/bin/playerctl play-pause
 else
-	playerctl -p $target_player play-pause
+	/usr/bin/playerctl -p $target_player play-pause
 fi
