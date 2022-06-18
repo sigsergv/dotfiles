@@ -1,0 +1,9 @@
+## How to install fuse and encfs using brew
+
+Since 2021 encfs and fuse are removed from main homebrew repo.
+
+Go to https://osxfuse.github.io and install macfuse package.
+
+Then install encfs from the external source:
+
+	brew install gromgit/fuse/encfs-mac
