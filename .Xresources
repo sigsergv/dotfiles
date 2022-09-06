@@ -27,3 +27,5 @@ xpdf*fontList:-*-therminus-medium-r-*-*-14-*-*-*-*-*-koi8-r#xterm*faceName:
 *VT100*colorBDMode: on
 *VT100*colorBD: red
 
+
+! *TkTheme: clam

@@ -1,0 +1,7 @@
+Execute this command:
+
+    kwriteconfig5 --file kwinrc --group ModifierOnlyShortcuts --key Meta ""
+
+Then restart kwin:
+
+	kwin --replace

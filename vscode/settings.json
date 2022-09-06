@@ -35,7 +35,11 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
 
       // Controls whether suggestions should automatically show up while typing.
-    "editor.quickSuggestions": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
 
     // Insert snippets when their prefix matches. Works best when 'quickSuggestions' aren't enabled.
     "editor.tabCompletion": "on",
