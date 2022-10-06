@@ -1,3 +1,9 @@
+####
+# Install:
+#   sudo apt install xbindkeys
+# Copy this file to home directory, relogin, xbindkeys should start automatically.
+####
+
 # Meta+C - player play-pause
 #"xdotool sleep 0.2 key --clearmodifiers XF86AudioPlay; dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
 #"xte 'keydown Super_L' 'key XF86AudioPlay'; dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
