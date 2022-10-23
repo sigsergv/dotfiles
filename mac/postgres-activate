@@ -1,0 +1,16 @@
+# install https://postgresapp.com first
+# activate/deactivate Postgres.app environment
+# Copy/symlink to ~/bin
+# Usage:
+#   $ source ~/bin/postgres-activate
+#   $ postgres-deactivate
+
+export PATH=/Applications/Postgres.app/Contents/Versions/15/bin:$PATH
+export PS1_SAVED_POSTGRES="${PS1}"
+export PS1="[local postgres] $ "
+
+function postgres-deactivate {
+	export PS1="$PS1_SAVED_POSTGRES"
+	unset PS1_SAVED_POSTGRES
+	unset -f postgres-deactivate
+}
