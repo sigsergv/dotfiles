@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 CWD=$(pwd)
-TWD="${HOME}/Library/Application Support/Sublime Text 3/Packages"
+TWD="${HOME}/Library/Application Support/Sublime Text/Packages"
 
 set -x
 rm -f "${TWD}/SIGSERGV.tmTheme"
