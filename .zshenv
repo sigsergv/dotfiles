@@ -1,3 +1,8 @@
+########### WARNING
+# Do not set PATH environment here, edit ~/.zshrc_local instead
+###########
+
+# locale variables with values for debian/ubuntu linux
 export LANG=en_US
 export LANGUAGE=en_US:en_GB:en
 export LC_CTYPE="en_US.utf8"

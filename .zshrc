@@ -1,3 +1,22 @@
+# zsh read configuration files in this order:
+#
+# 1. /etc/zshenv (doesn't exist in MacOS)
+# 2. ~/.zshenv
+# 3. LOGIN MODE
+#    /etc/zprofile
+#    ~/.zprofile
+# 4. INTERACTIVE MODE
+#    /etc/zshrc
+#    ~/.zshrc
+# 5. LOGIN MODE
+#    /etc/zlogin
+#    ~/.zlogin
+#
+#
+# In MacOS new terminal window/tab is ALWAYS login shell so when /etc/zprofile is executed it modifies $PATH
+# environment variable and reorder path items. So if you need to add custom path items modify PATH in ~/.zshrc or
+# in ~/.zshrc_local (preferred way as this file unique for each computer)
+
 bindkey -e
 bindkey "^[[1~" beginning-of-line
 bindkey "\e[3~" delete-char
@@ -5,11 +24,15 @@ bindkey "^[[4~" end-of-line
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
 
-# The following lines were added by compinstall
+# The following lines were added by compinstall (zsh completion system)
 zstyle :compinstall filename "$HOME/.zshrc"
 
 autoload -Uz compinit
 compinit -u
+##
+
+# remove duplicates from PATH and path variables ($path is tied to $PATH but $path is array not string)
+typeset -U PATH path
 
 PS1='[%n@%m:%~]%70(l|
 |)%# '
@@ -71,6 +94,10 @@ setopt inc_append_history
 setopt extended_history
 setopt pushd_ignore_dups
 setopt no_bang_hist
+
+# if you need to modify PATH environment variable add the line below to ~/.zshrc_local
+# DO NOT USE ~/.zshenv !
+# path=('/opt/homebrew/opt/openjdk/bin' $path)
 
 source ~/.zshrc_local
 
