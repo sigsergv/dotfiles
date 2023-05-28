@@ -26,12 +26,17 @@ case $focused_cmd in
 	target_player=MellowPlayer3
 	;;
 
+	*/usr/lib/chromium/chromium* )
+	target_player=$(playerctl -l|grep chromium)
+	;;
+
 	* )
-	#echo $focused_cmd
+	# echo $focused_cmd > /tmp/pp-focused-app
 	target_player=unknown
 	;;
 esac
 
+#echo $target_player > /tmp/pp-focused-app
 if [ "$focused_cmd" = "unknown" ] ; then
 	/usr/bin/playerctl play-pause
 else

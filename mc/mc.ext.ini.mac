@@ -755,7 +755,8 @@ Include=editor
 [djvu]
 Regex=\.djvu?$
 RegexIgnoreCase=true
-Open=/opt/homebrew/Cellar/midnight-commander/4.8.29_1/libexec/mc/ext.d/doc.sh open djvu
+#Open=/opt/homebrew/Cellar/midnight-commander/4.8.29_1/libexec/mc/ext.d/doc.sh open djvu
+Open=open %f
 View=%view{ascii} /opt/homebrew/Cellar/midnight-commander/4.8.29_1/libexec/mc/ext.d/doc.sh view djvu
 
 # Comic Books
