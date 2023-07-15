@@ -5,6 +5,8 @@
 focused_pid=$(/usr/bin/xdotool getwindowfocus getwindowpid)
 focused_cmd=$(ps -p $focused_pid -o args | tail -n1)
 
+send_spacebar=false
+
 case $focused_cmd in
 	*spotify* )
 	target_player=spotify
@@ -28,6 +30,7 @@ case $focused_cmd in
 
 	*/usr/lib/chromium/chromium* )
 	target_player=$(playerctl -l|grep chromium)
+	send_spacebar=true
 	;;
 
 	* )
@@ -40,5 +43,9 @@ esac
 if [ "$focused_cmd" = "unknown" ] ; then
 	/usr/bin/playerctl play-pause
 else
-	/usr/bin/playerctl -p $target_player play-pause
+	if [ "$send_spacebar" = "true" ]; then
+		/usr/bin/xdotool key space
+	else
+		/usr/bin/playerctl -p $target_player play-pause
+	fi
 fi
