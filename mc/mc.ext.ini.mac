@@ -840,6 +840,12 @@ View=%view{ascii} /opt/homebrew/Cellar/midnight-commander/4.8.29_1/libexec/mc/ex
 
 ### Plain compressed files ###
 
+[whl]
+# python wheel package
+Regex=\.whl$
+Open=%cd %p/uzip://
+View=%view{ascii} /opt/homebrew/Cellar/midnight-commander/4.8.29_1/libexec/mc/ext.d/archive.sh view zip
+
 [ace]
 Shell=.ace
 ShellIgnoreCase=true
