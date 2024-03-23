@@ -40,7 +40,7 @@ case $focused_cmd in
 esac
 
 #echo $target_player > /tmp/pp-focused-app
-if [ "$focused_cmd" = "unknown" ] ; then
+if [ "$target_player" = "unknown" ] ; then
 	/usr/bin/playerctl play-pause
 else
 	if [ "$send_spacebar" = "true" ]; then

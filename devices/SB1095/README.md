@@ -56,4 +56,7 @@ Configure lircd
   Exec=/usr/bin/irexec -d
   ~~~
 
+Volume control
+==============
 
+I'm using native pipewire instead of alsa or pulseaudio. Install wireplumber to control audio.
