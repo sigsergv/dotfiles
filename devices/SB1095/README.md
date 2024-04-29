@@ -55,6 +55,8 @@ Configure lircd
   Type=Application
   Exec=/usr/bin/irexec -d
   ~~~
+* systemd diagnostics: `sudo systemctl status lirc.service`
+* lircd restart: `sudo systemctl restart lircd`, need to restart irexec in desktop session: `/usr/bin/irexec -d`
 
 Volume control
 ==============
