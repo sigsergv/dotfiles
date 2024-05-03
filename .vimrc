@@ -224,4 +224,6 @@ end
 au FileType gitcommit setlocal tw=0
 
 
+" install pathogen:
+" mkdir -p ~/.vim/autoload ~/.vim/bundle && wget -O ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 execute pathogen#infect()

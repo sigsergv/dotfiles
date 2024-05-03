@@ -114,5 +114,7 @@
       "jupyter-notebook": "left"
     },
     "workbench.editor.untitled.hint": "hidden",
-    "git.openRepositoryInParentFolders": "never"
+    "git.openRepositoryInParentFolders": "never",
+    "update.mode": "manual",
+    "workbench.editor.empty.hint": "hidden"
 }
