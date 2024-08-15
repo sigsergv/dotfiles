@@ -64,7 +64,7 @@ stt_both  () { setTerminalText 0 $@; }
 stt_tab   () { setTerminalText 1 $@; }
 stt_title () { setTerminalText 2 $@; }
 
-alias ll='ls -la --color=y'
+alias ll='ls -la --color=always'
 #alias gerp=grep
 #alias f="find . -name "
 
