@@ -5,7 +5,7 @@
  * Linux: $HOME/.mozilla/firefox/profile_name/chrome
  *
  * See also: https://developer.mozilla.org/en-US/docs/Tools/Browser_Toolbox
- */
+ **/
 
 .tab-content:not([pinned]) {
   -moz-padding-start: 3px !important; /* default: 9px */
@@ -28,7 +28,7 @@
 
 .tab-throbber:not([pinned]),
 .tab-icon-image:not([pinned]) {
-  -moz-margin-end: 2px !important; /* make the label closer to the favicon -default: 6px- */
+  -moz-margin-end: 1px !important; /* make the label closer to the favicon -default: 6px- */
 }
 
 .tabbrowser-tab:not([pinned]) {
@@ -41,16 +41,12 @@
 }
 
 .tabbrowser-tab[pinned] .tab-icon-image {
-  margin-left: -2px;
+  margin-left: -5px;
 }
 
 .tabbrowser-tab[pinned] {
   max-width: 18px !important; /* small enough to make sure there's no title -favicon is 16px long- */
   min-width: 30px !important;
-}
-
-.tab-close-button {
-  display: none !important;
 }
 
 /* prevent tab overflow */
@@ -61,7 +57,11 @@
     overflow: hidden !important;
 }
 
-/*** Hide Tab Close buttons ***/
+/* Hide Tab Close buttons */
 .tabbrowser-tab .tab-close-button.close-icon {
-	display:none !important;
+	display: none !important;
 }
+
+/* remove gap after pinned tabs */
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) {
+  margin-inline-start: 1px !important;
