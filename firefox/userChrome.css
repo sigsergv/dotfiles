@@ -61,4 +61,7 @@
     overflow: hidden !important;
 }
 
-
+/*** Hide Tab Close buttons ***/
+.tabbrowser-tab .tab-close-button.close-icon {
+	display:none !important;
+}

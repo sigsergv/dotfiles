@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python3
 
 """
 This script updates all firefox profiles (all mentioned files will be replaced!):
@@ -11,11 +11,9 @@ Install symlinks to files:
 Supported operating systems: Macos, Linux
 """
 
-from __future__ import print_function
-
 import platform
 import os.path
-import ConfigParser
+import configparser
 from sys import exit
 
 # detect OS
@@ -38,7 +36,7 @@ else:
 CHROME_FILES = ('userChrome.css', 'userContent.css')
 
 # read profiles config and fetch all profile
-config = ConfigParser.ConfigParser()
+config = configparser.ConfigParser()
 config.read(PROFILES_CONFIG)
 
 profiles = []
@@ -66,6 +64,7 @@ for s in config.sections():
                 pass
             try:
                 os.symlink(src, dst)
+                print(f'Created symlink: {src} -> {dst}')
             except:
                 print('Failed to install file {0} to `{1}`'.format(fn, dst))
 
