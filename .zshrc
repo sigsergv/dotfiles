@@ -101,4 +101,5 @@ setopt no_bang_hist
 
 source ~/.zshrc_local
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+export PATH="${PATH}:${HOME}/bin"
+
