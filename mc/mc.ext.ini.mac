@@ -204,7 +204,14 @@ Include=tar.gz
 [zip-by-type]
 Type=\(Zip archive
 Open=%cd %p/uzip://
-View=%view{ascii} /opt/homebrew/Cellar/midnight-commander/4.8.31/libexec/mc/ext.d/archive.sh view zip
+#View=%view{ascii} /opt/homebrew/Cellar/midnight-commander/4.8.31/libexec/mc/ext.d/archive.sh view zip
+
+[7zip]
+Shell=.7z
+ShellIgnoreCase=true
+Open=%cd %p/u7z://
+#View=%view{ascii} /opt/homebrew/Cellar/midnight-commander/4.8.31/libexec/mc/ext.d/archive.sh view 7z
+
 
 [zip-by-shell]
 Shell=.zip
