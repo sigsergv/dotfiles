@@ -204,20 +204,19 @@ Include=tar.gz
 [zip-by-type]
 Type=\(Zip archive
 Open=%cd %p/uzip://
-#View=%view{ascii} /opt/homebrew/Cellar/midnight-commander/4.8.31/libexec/mc/ext.d/archive.sh view zip
-
-[7zip]
-Shell=.7z
-ShellIgnoreCase=true
-Open=%cd %p/u7z://
-#View=%view{ascii} /opt/homebrew/Cellar/midnight-commander/4.8.31/libexec/mc/ext.d/archive.sh view 7z
-
+View=%view{ascii} /opt/homebrew/var/homebrew/linked/midnight-commander/libexec/mc/ext.d/archive.sh view zip
 
 [zip-by-shell]
 Shell=.zip
 ShellIgnoreCase=true
 Open=%cd %p/uzip://
-View=%view{ascii} /opt/homebrew/Cellar/midnight-commander/4.8.31/libexec/mc/ext.d/archive.sh view zip
+View=%view{ascii} /opt/homebrew/var/homebrew/linked/midnight-commander/libexec/mc/ext.d/archive.sh view zip
+
+[7zip]
+Shell=.7z
+ShellIgnoreCase=true
+Open=%cd %p/u7z://
+View=%view{ascii} /opt/homebrew/var/homebrew/linked/midnight-commander/libexec/mc/ext.d/archive.sh view 7z
 
 [pdf]
 Type=^PDF
@@ -297,5 +296,5 @@ Open=/usr/bin/open %f
 
 [Include/tar.gz]
 Open=%cd %p/utar://
-View=%view{ascii} /opt/homebrew/Cellar/midnight-commander/4.8.31/libexec/mc/ext.d/archive.sh view tar.gz
+View=%view{ascii} /opt/homebrew/var/homebrew/linked/midnight-commander/libexec/mc/ext.d/archive.sh view tar.gz
 
