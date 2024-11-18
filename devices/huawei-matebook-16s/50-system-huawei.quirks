@@ -1,8 +1,0 @@
-# 2024 model requires ModelPressurePad=1
-# replace file /usr/share/libinput/50-system-huawei.quirks
-[Huawei MateBook X Pro 2024 Touchpad]
-MatchName=GXTP7863:00 27C6:01E0 Touchpad
-MatchUdevType=touchpad
-MatchDMIModalias=dmi:*svnHUAWEI:*pnVGHH-XX*
-AttrEventCode=-BTN_RIGHT
-ModelPressurePad=1
