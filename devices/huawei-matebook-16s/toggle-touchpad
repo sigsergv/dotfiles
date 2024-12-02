@@ -1,11 +1,23 @@
 #!/bin/bash
-# Assign this script to hotkey X86Tool to toggle touchpad on/off
+# Assign this script to hotkey X86Tool (via global hotkeys feature) to toggle touchpad on/off
 
-device=$(xinput list | grep Touchpad | grep -o 'id=[0-9]\+' | grep -o '[0-9]\+')
+## note: after kernel update xinput list stopped showing device label so we have to probe all
+##       suitable devices for touchpad features
+probe_device_ids=$(xinput list | grep GXTP7863:00 | grep -o 'id=[0-9]\+' | grep -o '[0-9]\+')
 
-state=$(xinput list-props $device | grep 'Device Enabled' | grep -o '[01]$')
-if [ "$state" = "1"  ]; then
-	xinput --disable $device
-else
-	xinput --enable $device
+for d in $probe_device_ids; do
+	xinput list-props $d | grep -q Tapping
+	if [ $? -eq 0 ]; then
+		device_id=$d
+		break
+	fi
+done
+
+if [ ! -z $device_id ]; then
+	state=$(xinput list-props $device_id | grep 'Device Enabled' | grep -o '[01]$')
+	if [ "$state" = "1"  ]; then
+		xinput --disable $device_id
+	else
+		xinput --enable $device_id
+	fi
 fi
