@@ -1,0 +1,41 @@
+#!/bin/bash
+# 
+# Create symlink to this script, symlink file name must match this template: umount-vault,
+# where vault is vault name.
+
+BASE=$(basename $0)
+CRYFS=/usr/bin/cryfs
+
+if [ -x /opt/homebrew/bin/cryfs ]; then
+	CRYFS=/opt/homebrew/bin/cryfs
+fi
+
+CRYFS_UMOUNT="${CRYFS}-unmount"
+
+if [ ! -x $CRYFS ]; then
+	echo "cryfs executable not found!"
+	exit 1
+fi
+
+# extract vault name from script file name
+if ! [[ "${BASE}" =~ ^umount-[a-z]+$ ]]; then
+	echo "Script name is invalid, it must contain Vault name"
+	exit 1
+fi
+
+VAULT=$(echo $BASE | sed -E 's!^umount-([a-z]+)$!\1!')
+MOUNT="${HOME}/Vaults/${VAULT}"
+
+if [ ! -e "${MOUNT}" ]; then
+	mkdir -p "${MOUNT}"
+fi
+
+mount | grep -q "${MOUNT}"
+if [ $? -eq 0 ]; then
+	$CRYFS_UMOUNT "${MOUNT}"
+
+	# TODO wait until umout
+else
+	echo "Vault '${VAULT}' is not mounted to '${MOUNT}'."
+	exit 1
+fi

@@ -1,0 +1,37 @@
+#!/bin/bash
+# 
+# Create symlink to this script, symlink file name must match this template: mount-vault,
+# where vault is vault name.
+
+BASE=$(basename $0)
+CRYFS=/usr/bin/cryfs
+
+if [ -x /opt/homebrew/bin/cryfs ]; then
+	CRYFS=/opt/homebrew/bin/cryfs
+fi
+
+if [ ! -x $CRYFS ]; then
+	echo "cryfs executable not found!"
+	exit 1
+fi
+
+# extract vault name from script file name
+if ! [[ "${BASE}" =~ ^mount-[a-z]+$ ]]; then
+	echo "Script name is invalid, it must contain Vault name"
+	exit 1
+fi
+
+VAULT=$(echo $BASE | sed -E 's!^mount-([a-z]+)$!\1!')
+MOUNT="${HOME}/Vaults/${VAULT}"
+
+if [ ! -e "${MOUNT}" ]; then
+	mkdir -p "${MOUNT}"
+fi
+
+mount | grep -q "${MOUNT}"
+if [ $? -eq 0 ]; then
+	echo "Vault '${VAULT}' is already mounted to '${MOUNT}'."
+	exit 1
+fi
+
+$CRYFS "${HOME}/Sync/Vaults/${VAULT}" "${MOUNT}"
