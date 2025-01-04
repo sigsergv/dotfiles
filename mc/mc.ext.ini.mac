@@ -218,6 +218,10 @@ ShellIgnoreCase=true
 Open=%cd %p/u7z://
 View=%view{ascii} /opt/homebrew/var/homebrew/linked/midnight-commander/libexec/mc/ext.d/archive.sh view 7z
 
+[djvu]
+Regex=\\.djvu
+Include=system-open
+
 [pdf]
 Type=^PDF
 Include=system-open
