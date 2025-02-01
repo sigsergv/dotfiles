@@ -226,6 +226,12 @@ ShellIgnoreCase=true
 Open=%cd %p/u7z://
 View=%view{ascii} /opt/homebrew/var/homebrew/linked/midnight-commander/libexec/mc/ext.d/archive.sh view 7z
 
+[rar]
+Regex=\\.r(ar|[0-9][0-9])$
+RegexIgnoreCase=true
+Open=%cd %p/urar://
+View=%view{ascii} /opt/homebrew/var/homebrew/linked/midnight-commander/libexec/mc/ext.d/archive.sh view rar
+
 [djvu]
 Regex=\\.djvu
 Include=system-open
