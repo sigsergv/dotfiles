@@ -9,3 +9,5 @@ Open file `/usr/share/plasma/look-and-feel/org.kde.breeze.desktop/contents/locks
         }
     }
 
+
+OR for KDE6: `/usr/share/plasma/shells/org.kde.plasma.desktop/contents/lockscreen/LockScreenUi.qml`
