@@ -195,7 +195,7 @@ Version=4.0
 [OpenOffice.org]
 Regex=\\.(odt|fodt|ott|sxw|stw|ods|fods|ots|sxc|stc|odp|fodp|otp|sxi|sti|odg|fodg|otg|sxd|std|odb|odf|sxm|odm|sxg)$
 RegexIgnoreCase=true
-Open=open -a LibreOffice.app --args %f
+Open=/usr/bin/open -a LibreOffice.app --args %f
 
 [tar.gz]
 Regex=\\.t([gp]?z|ar\\.g?[zZ])$
@@ -219,6 +219,11 @@ Shell=.zip
 ShellIgnoreCase=true
 Open=%cd %p/uzip://
 View=%view{ascii} /opt/homebrew/var/homebrew/linked/midnight-commander/libexec/mc/ext.d/archive.sh view zip
+
+[fonts]
+Regex=\\.(ttf|otf|ttc)$
+RegexIgnoreCase=true
+Include=system-open
 
 [7zip]
 Shell=.7z
