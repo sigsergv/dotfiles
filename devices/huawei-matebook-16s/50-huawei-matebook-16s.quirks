@@ -3,6 +3,7 @@
 [Huawei MateBook 16s 2023 Touchpad]
 MatchName=GXTP7863:00 27C6:01E8
 MatchUdevType=touchpad
+# see /sys/class/dmi/id/modalias
 MatchDMIModalias=dmi:*svnHUAWEI:*pvrM1010*
-AttrEventCodeDisable=BTN_RIGHT
+AttrEventCode=-BTN_RIGHT
 
