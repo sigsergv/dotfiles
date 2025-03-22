@@ -1,3 +1,4 @@
+# This quirk enables palm detection and some other features probably
 # copy this file to /usr/share/libinput/
 
 [Huawei MateBook 16s 2023 Touchpad]
