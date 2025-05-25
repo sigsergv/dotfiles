@@ -241,6 +241,10 @@ View=%view{ascii} /opt/homebrew/var/homebrew/linked/midnight-commander/libexec/m
 Regex=\\.djvu
 Include=system-open
 
+[epub]
+Regex=\\.epub
+Include=system-open
+
 [pdf]
 Type=^PDF
 Include=system-open
