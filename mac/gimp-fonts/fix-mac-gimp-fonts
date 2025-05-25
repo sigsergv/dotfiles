@@ -1,22 +1,95 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-APP_DIR=$(ls /Applications | grep -i gimp-)
-FULL_APP_DIR="/Applications/$APP_DIR"
+#set -e
+#set -x
+
+if test -z "${1}"; then
+	cat << EOT
+
+This script reconfigures installed GIMP app and modifies directories where GIMP searches for
+fonts. It removes system directories and replaces them the with "~/Library/GimpFonts". It also create
+symlinks from some important system fonts listed in local variable SYSTEM_FONTS (based on macos sonoma)
+
+Install (just copy) your favorite fonts to "~/Library/GimpFonts", do not place symlinks there, they will
+be deleted!
+
+Instructions:
+
+1. Download and Install GIMP from https://www.gimp.org/ to /Applications
+
+2. Execute this script with the single argument "install":
+   
+   $0 install
+
+3. Fix permissions
+EOT
+	exit 1
+fi
+
+if test "${1}" != "install"; then
+	echo "Unknown argument"
+	exit 1
+fi
+
+IFS=$'\n' read -d '' -r -a SYSTEM_FONTS <<"EOF"
+Arial Unicode.ttf
+Apple Color Emoji.ttc
+Apple Symbols.ttf
+Apple Symbols.ttf
+Avenir Next Condensed.ttc
+Avenir Next.ttc
+Avenir.ttc
+Courier.ttc
+Helvetica.ttc
+HelveticaNeue.ttc
+Menlo.ttc
+Monaco.ttf
+NewYork.ttf
+NewYorkItalic.ttf
+Optima.ttc
+Palatino.ttc
+Symbol.ttf
+Times.ttc
+EOF
+
+APP_NAME="GIMP.app"
+FULL_APP_DIR="/Applications/${APP_NAME}"
+
+if test ! -d "${FULL_APP_DIR}"; then
+	echo "Target application '${FULL_APP_DIR}' does not exist, please check that GIMP.app installed to /Applications"
+	exit 1
+fi
+
 CONF_FILE="${FULL_APP_DIR}/Contents/Resources/etc/fonts/fonts.conf"
-TARGET_DIR=~/Library/GimpFonts
+
+if test ! -f "${CONF_FILE}"; then
+	echo "Configuration file '${CONF_FILE}' not found."
+	exit 1
+fi
+
+TARGET_FONTS_DIR=~/Library/GimpFonts
 SRC1=/Library/Fonts
 SRC2=/System/Library/Fonts
 
-sed -i -E 's!<dir>/System/Library/Fonts</dir> !<\!--<dir>/System/Library/Fonts</dir>--> !' "$CONF_FILE"
-sed -i -E 's! <dir>/Library/Fonts</dir>! <\!--<dir>/Library/Fonts</dir>-->!' "$CONF_FILE"
-sed -i -E 's! <dir>~/Library/Fonts</dir>! <\!--<dir>~/Library/Fonts</dir>-->!' "$CONF_FILE"
-sed -i -E 's!	<dir>/usr/share/fonts</dir>!	<dir>~/Library/GimpFonts</dir> <dir>/usr/share/fonts</dir>!' "$CONF_FILE"
-echo $CONF_FILE
+if ! test -e $TARGET_FONTS_DIR; then
+	mkdir $TARGET_FONTS_DIR
+fi
 
-mkdir -p ~/Library/GimpFonts
+TMP_CONF=$(/usr/bin/mktemp)
+trap "rm -f ${TMP_CONF}" EXIT
 
-while IFS= read -r fn; do
-	target="${TARGET_DIR}/${fn}"
+cp "${CONF_FILE}" "${TMP_CONF}"
+
+
+sed -i -E 's!<dir>/System/Library/Fonts</dir>!<\!--<dir>/System/Library/Fonts</dir>-->!' "${TMP_CONF}"
+sed -i -E 's!<dir>/Library/Fonts</dir>!<\!--<dir>/Library/Fonts</dir>-->!' "${TMP_CONF}"
+sed -i -E 's!<dir>~/Library/Fonts</dir>!<\!--<dir>~/Library/Fonts</dir>-->!' "${TMP_CONF}"
+sed -i -E 's!<dir>/usr/X11/lib/X11/fonts</dir>!<dir>'"${TARGET_FONTS_DIR}"'</dir>!' "${TMP_CONF}"
+
+find $TARGET_FONTS_DIR -maxdepth 1 -type l -delete
+
+for fn in "${SYSTEM_FONTS[@]}"; do
+	target="${TARGET_FONTS_DIR}/${fn}"
 	if [ ! -e "$target" ]; then
 		if [ -f "${SRC1}/${fn}" ]; then
 			ln -s "${SRC1}/$fn" "$target"
@@ -26,6 +99,9 @@ while IFS= read -r fn; do
 			echo "Font ${fn} not found in system directories."
 		fi
 	fi
-done < "fonts-list.txt"
+done
 
+cp "${TMP_CONF}" "${CONF_FILE}"
+
+xattr -dr com.apple.quarantine /Applications/GIMP.app
 
