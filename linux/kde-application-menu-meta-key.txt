@@ -1,3 +1,7 @@
+In KDE6 just use settings app and disable hotkey in section:
+
+Input & Output > Keyboard > Shortcuts > plasmashell > Activate Application Launcher
+
 To disable Win/Meta key, open file `~/.config/kwinrc` and edit (add if doesn't exist) this section:
 
 [ModifierOnlyShortcuts]
