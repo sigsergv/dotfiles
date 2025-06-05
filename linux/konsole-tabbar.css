@@ -1,0 +1,41 @@
+/*
+ * Specify path to this file in Konsole settings: Tab Bar / splitters > Appearance
+ */
+
+QTabBar::tab:selected {
+    background: #fff;
+    /* text-decoration: underline; */
+}
+
+/*
+QTabBar {
+    height: 40pt !important;
+}
+*/
+
+QTabBar::tab {
+    color: black;
+    border: 1px solid #e7e7e7;
+    padding: 0px 5px 0px 5px;
+    height: 22px;
+}
+
+/*
+QTabBar::tab {
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: #9B9B9B;
+    padding: 2px 0 1px 2px;
+    background-image: none;
+    margin: 0 0 2px -1px;
+}
+
+QTabWidget::tab-bar {
+    xborder: 1px solid green;
+    margin: 5px;
+}
+
+QTabBar {
+    border: 1px solid #9B9B9B;
+}
+*/
