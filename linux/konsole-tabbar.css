@@ -2,6 +2,10 @@
  * Specify path to this file in Konsole settings: Tab Bar / splitters > Appearance
  */
 
+QTabBar::tab {
+    background: #c7c8c9;
+}
+
 QTabBar::tab:selected {
     background: #fff;
     /* text-decoration: underline; */
