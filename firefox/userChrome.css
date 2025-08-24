@@ -63,5 +63,11 @@
 }
 
 /* remove gap after pinned tabs */
+/*
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) {
   margin-inline-start: 1px !important;
+*/
+
+#pinned-tabs-container[orient="horizontal"] {
+  margin-inline-end: 1px !important;
+}
