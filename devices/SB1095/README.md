@@ -62,3 +62,6 @@ Volume control
 ==============
 
 I'm using native pipewire instead of alsa or pulseaudio. Install wireplumber to control audio.
+
+Directories `./pulse` and `./alsa` contains scripts I've been using before, they are not supported nor
+updated anymore.

@@ -1,0 +1,6 @@
+polkit.addRule(function(action, subject) {
+  polkit.log(action + ", " + subject);
+  if (~["org.freedesktop.login1.power-off","org.freedesktop.login1.power-off-multiple-sessions","org.freedesktop.login1.reboot","org.freedesktop.login1.reboot-multiple-sessions"].indexOf(action.id)) {
+    return polkit.Result.YES;
+  }
+});
