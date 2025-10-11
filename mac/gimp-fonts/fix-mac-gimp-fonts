@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# WARNING: this script is mostly outdated
 #set -e
 #set -x
 
