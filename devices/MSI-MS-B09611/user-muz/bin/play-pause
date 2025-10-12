@@ -1,4 +1,5 @@
 #!/bin/bash
+# set -x
 
 ## Smart play-pause, for currently focused player only.
 
@@ -7,6 +8,8 @@ focused_cmd=$(ps -p $focused_pid -o args | tail -n1)
 
 send_spacebar=false
 
+# echo $focused_cmd > /tmp/pp-focused-app
+
 case $focused_cmd in
 	*spotify* )
 	target_player=spotify
@@ -14,6 +17,10 @@ case $focused_cmd in
 
 	*"Google Play Music Desktop Player"* )
 	target_player=google_play_music_desktop_player
+	;;
+
+	*/usr/bin/strawberry* )
+	target_player=strawberry
 	;;
 
 	*/usr/bin/clementine* )
