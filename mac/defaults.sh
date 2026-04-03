@@ -127,3 +127,7 @@ defaults write .GlobalPreferences com.apple.trackpad.scrolling 0.08
 
 # set trackpad pointer speed
 defaults write .GlobalPreferences com.apple.trackpad.scaling 0.5
+
+# pack icon tighter in notification area
+defaults -currentHost write -globalDomain NSStatusItemSpacing -int 2
+defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 2
