@@ -1,0 +1,36 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "tabs": {
+    "show_close_button": "hidden"
+  },
+  "buffer_line_height": {
+    "custom": 1.2000000476837158
+  },
+  "buffer_font_family": "Liberation Mono",
+  "agent_ui_font_size": 14.0,
+  "ui_font_family": "PT Sans",
+  "icon_theme": {
+    "mode": "light",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 15.0,
+  "buffer_font_size": 11.0,
+  "theme": {
+    "mode": "light",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+}
