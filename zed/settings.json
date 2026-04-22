@@ -8,10 +8,10 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "tabs": {
-    "show_close_button": "hidden"
+    "show_close_button": "hidden",
   },
   "buffer_line_height": {
-    "custom": 1.2000000476837158
+    "custom": 1.2000000476837158,
   },
   "buffer_font_family": "Liberation Mono",
   "agent_ui_font_size": 14.0,
@@ -19,11 +19,11 @@
   "icon_theme": {
     "mode": "light",
     "light": "Zed (Default)",
-    "dark": "Zed (Default)"
+    "dark": "Zed (Default)",
   },
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "base_keymap": "VSCode",
   "ui_font_size": 15.0,
@@ -32,5 +32,10 @@
     "mode": "light",
     "light": "One Light",
     "dark": "One Dark",
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
   },
 }
