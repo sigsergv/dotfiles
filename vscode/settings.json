@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Light+",
     "workbench.editor.tabCloseButton": "off",
     "editor.fontFamily": "JetBrains Mono NL",
     "editor.fontSize": 12,
@@ -65,7 +65,7 @@
     "editor.hover.delay": 1500,
 
     // Controls whether the hover is shown.
-    "editor.hover.enabled": true,
+    "editor.hover.enabled": "on",
 
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.rendererType": "canvas",
