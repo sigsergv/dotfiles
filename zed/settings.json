@@ -13,21 +13,21 @@
 {
   "show_whitespaces": "boundary",
   "project_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent": {
     "dock": "right",
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "tabs": {
     "show_close_button": "hidden",
@@ -56,11 +56,26 @@
     "light": "One Light",
     "dark": "One Dark",
   },
-  "wrap_guides": [80,100],
+  "wrap_guides": [80, 100],
   "show_wrap_guides": true,
   "git": {
     "inline_blame": {
       "enabled": false,
+    },
+  },
+
+  "lsp": {
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "configuration": {
+            "format": {
+              // use single-quote for strings
+              "quote-style": "single",
+            },
+          },
+        },
+      },
     },
   },
 }
