@@ -1,7 +1,7 @@
 
 [Desktop Entry]
 Comment=
-Exec=/home/sigsergv/app/zed/zed.app/bin/zed
+Exec=env ZED_FONTS_GAMMA=1.2 /home/sigsergv/app/zed/zed.app/bin/zed
 Icon=/home/sigsergv/app/zed/zed.app/share/icons/hicolor/512x512/apps/zed.png
 Name=Zed Editor
 NoDisplay=false
