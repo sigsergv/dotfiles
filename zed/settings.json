@@ -11,6 +11,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "disable_ai": true,
   "show_whitespaces": "boundary",
   "project_panel": {
     "dock": "left",
